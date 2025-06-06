@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "my-form-app",
-=======
-  "name": "client",
->>>>>>> 1f906929260ca25a2fb1faa856e2d215cb84f955
   "version": "0.1.0",
   "private": true,
   "dependencies": {
