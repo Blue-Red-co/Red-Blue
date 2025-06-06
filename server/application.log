@@ -1,0 +1,1266 @@
+[06-Jun-2025 09:49:32] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 09:49:34] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: settings.js
+[06-Jun-2025 09:49:34] [ERROR] ❌ applicationerror.js:141 -> SVENV not defined. Cannot read configuration.
+[06-Jun-2025 09:49:34] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 09:49:34",
+  "errorCode": "B00000FXXXL0077",
+  "debugInfo": {
+    "fileName": "settings.js",
+    "lineNumber": "77",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0077"
+  }
+}
+[06-Jun-2025 09:49:35] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 09:49:35] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: SVENV not defined. Cannot read configuration. | ERROR: {
+  "timestamp": "06-Jun-2025 09:49:34",
+  "errorCode": "B00000FXXXL0077",
+  "debugInfo": {
+    "fileName": "settings.js",
+    "lineNumber": "77",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0077"
+  }
+}
+[06-Jun-2025 09:49:35] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 09:49:34",
+  "errorCode": "B00000FXXXL0077",
+  "debugInfo": {
+    "fileName": "settings.js",
+    "lineNumber": "77",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0077"
+  }
+}
+[06-Jun-2025 09:49:35] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 09:49:35] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: SVENV not defined. Cannot read configuration. | ERROR: {
+  "timestamp": "06-Jun-2025 09:49:34",
+  "errorCode": "B00000FXXXL0077",
+  "debugInfo": {
+    "fileName": "settings.js",
+    "lineNumber": "77",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0077"
+  }
+}
+[06-Jun-2025 09:49:51] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 09:49:52] [INFO] ℹ️ utils.js:284 -> 
+🚀 Welcome to vio_node_helpers Help Guide  
+🔹 Here are the available topics you can explore:  
+✅ projectsetup → Initialize project folder structure  
+✅ configure → Manage environment configurations  
+✅ projectstructure → Organize project files efficiently  
+✅ routes → Define and manage API service endpoints  
+
+📌 To get details about a specific topic, run:  
+<your-program> --help <topic>
+
+[06-Jun-2025 09:50:06] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 09:50:06] [ERROR] ❌ utils.js:315 -> Error building project organization file. | ERROR: {}
+[06-Jun-2025 09:50:28] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 09:50:28] [INFO] ℹ️ utils.js:211 -> Created file: C:\Users\vsher\Desktop\Sv\server\routes\routedefinitions.js
+[06-Jun-2025 09:50:28] [INFO] ℹ️ utils.js:211 -> Created file: C:\Users\vsher\Desktop\Sv\server\projectOrganization.js
+[06-Jun-2025 09:50:28] [INFO] ℹ️ utils.js:211 -> Created file: C:\Users\vsher\Desktop\Sv\server\index.conf
+[06-Jun-2025 09:50:28] [SUCCESS] ✅ utils.js:196 -> Project setup completed successfully.
+[06-Jun-2025 09:51:25] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 09:51:26] [INFO] ℹ️ utils.js:240 -> Configuring environment: [Local]
+[06-Jun-2025 09:51:26] [INFO] ℹ️ utils.js:41 -> Request you to provide answers to the questions asked below to prepare the configuration file.
+[06-Jun-2025 09:51:26] [INFO] ℹ️ utils.js:42 -> Configuration is being prepared for [Local] deployment
+[06-Jun-2025 09:51:31] [INFO] ℹ️ utils.js:90 -> >>>>>Provide MySQL Database Connection Details
+[06-Jun-2025 09:53:33] [INFO] ℹ️ utils.js:57 -> 
+[06-Jun-2025 09:53:46] [SUCCESS] ✅ utils.js:249 -> Configuration file updated successfully.
+[06-Jun-2025 09:54:33] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 09:54:33] [INFO] ℹ️ utils.js:284 -> 
+🚀 Welcome to vio_node_helpers Help Guide  
+🔹 Here are the available topics you can explore:  
+✅ projectsetup → Initialize project folder structure  
+✅ configure → Manage environment configurations  
+✅ projectstructure → Organize project files efficiently  
+✅ routes → Define and manage API service endpoints  
+
+📌 To get details about a specific topic, run:  
+<your-program> --help <topic>
+
+[06-Jun-2025 09:54:53] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 09:54:53] [ERROR] ❌ utils.js:315 -> Error building project organization file. | ERROR: {}
+[06-Jun-2025 09:55:15] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 09:55:15] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 09:55:15] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 09:55:15] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 09:55:16] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 09:55:16] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 09:55:16] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 09:55:16] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 09:55:16] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 09:59:50] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 09:59:51] [ERROR] ❌ utils.js:315 -> Error building project organization file. | ERROR: {}
+[06-Jun-2025 15:45:51] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:45:54] [ERROR] ❌ utils.js:315 -> Error building project organization file. | ERROR: {}
+[06-Jun-2025 15:46:31] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:46:31] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:46:31] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:46:31] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:46:31] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:46:31] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:46:32] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:46:32] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:46:32] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:46:32] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: httphelper.js
+[06-Jun-2025 15:46:32] [ERROR] ❌ applicationerror.js:141 -> [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {}
+[06-Jun-2025 15:46:32] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: httphelper.js
+[06-Jun-2025 15:46:32] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {
+  "timestamp": "06-Jun-2025 15:46:32",
+  "errorCode": "B00000FXXXL0080",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "80",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0080"
+  }
+}
+[06-Jun-2025 15:46:32] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 15:46:32",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:46:32] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 15:46:32] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] Error: [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {
+  "timestamp": "06-Jun-2025 15:46:32",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:46:32] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 15:46:32",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:46:32] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 15:46:32] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] Error: [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {
+  "timestamp": "06-Jun-2025 15:46:32",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:48:16] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:48:17] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:48:17] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:48:17] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:48:17] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:48:17] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:48:17] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:48:17] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:48:17] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:48:17] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: httphelper.js
+[06-Jun-2025 15:48:17] [ERROR] ❌ applicationerror.js:141 -> [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {}
+[06-Jun-2025 15:48:17] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: httphelper.js
+[06-Jun-2025 15:48:17] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {
+  "timestamp": "06-Jun-2025 15:48:17",
+  "errorCode": "B00000FXXXL0080",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "80",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0080"
+  }
+}
+[06-Jun-2025 15:48:17] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 15:48:17",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:48:17] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 15:48:17] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] Error: [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {
+  "timestamp": "06-Jun-2025 15:48:17",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:48:17] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 15:48:17",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:48:17] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 15:48:17] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] Error: [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {
+  "timestamp": "06-Jun-2025 15:48:17",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:50:30] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:50:31] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:50:31] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:50:31] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:50:31] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:50:31] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:50:31] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:50:31] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:50:31] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:51:46] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: httphelper.js
+[06-Jun-2025 15:51:46] [ERROR] ❌ applicationerror.js:141 -> [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {}
+[06-Jun-2025 15:52:06] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: httphelper.js
+[06-Jun-2025 15:52:06] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {
+  "timestamp": "06-Jun-2025 15:51:46",
+  "errorCode": "B00000FXXXL0080",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "80",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0080"
+  }
+}
+[06-Jun-2025 15:52:07] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 15:52:06",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:52:07] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 15:52:07] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] Error: [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {
+  "timestamp": "06-Jun-2025 15:52:06",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:52:07] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 15:52:06",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:52:07] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 15:52:07] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] Error: [ERROR] TypeError: Router.use() requires a middleware function but got a undefined | ERROR: {
+  "timestamp": "06-Jun-2025 15:52:06",
+  "errorCode": "B00000FXXXL0192",
+  "debugInfo": {
+    "fileName": "httphelper.js",
+    "lineNumber": "192",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0192"
+  }
+}
+[06-Jun-2025 15:52:15] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:52:16] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:52:16] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:52:16] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:52:16] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:52:16] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:52:16] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:52:16] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:52:16] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:52:37] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:52:38] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:52:38] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:52:38] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:52:38] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:52:38] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:52:38] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:52:38] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:52:38] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:53:03] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:53:04] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:53:04] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:53:04] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:53:04] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:53:04] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:53:04] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:53:04] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:53:04] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:53:27] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:53:28] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:53:28] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:53:28] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:53:28] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:53:28] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:53:28] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:53:28] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:53:28] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:54:07] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:54:08] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:54:08] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:54:08] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:54:08] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:54:08] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:54:08] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:54:08] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:54:08] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:56:22] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:56:22] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:56:22] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:56:22] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:56:23] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:56:23] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:56:23] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:56:23] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:56:23] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:56:32] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:56:33] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:56:33] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:56:33] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:56:33] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:56:33] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:56:33] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:56:33] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:56:33] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:57:37] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 15:57:38] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 15:57:38] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 15:57:38] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 15:57:38] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 15:57:38] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 15:57:38] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 15:57:38] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 15:57:38] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 15:58:34] [INFO] ℹ️ users.controller.js:3 -> sucess
+[06-Jun-2025 16:01:01] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:01:02] [ERROR] ❌ utils.js:315 -> Error building project organization file. | ERROR: {}
+[06-Jun-2025 16:01:25] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:01:25] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 16:01:25] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 16:01:25] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 16:01:25] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 16:01:25] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 16:01:25] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 16:01:25] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 16:01:25] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 16:01:39] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:01:39] [INFO] ℹ️ utils.js:284 -> 
+🚀 Welcome to vio_node_helpers Help Guide  
+🔹 Here are the available topics you can explore:  
+✅ projectsetup → Initialize project folder structure  
+✅ configure → Manage environment configurations  
+✅ projectstructure → Organize project files efficiently  
+✅ routes → Define and manage API service endpoints  
+
+📌 To get details about a specific topic, run:  
+<your-program> --help <topic>
+
+[06-Jun-2025 16:02:24] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:05:26] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:05:37] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:05:38] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: settings.js
+[06-Jun-2025 16:05:38] [ERROR] ❌ applicationerror.js:141 -> [ERROR] ReferenceError: buildProjectOrgFile is not defined | ERROR: {}
+[06-Jun-2025 16:05:38] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 16:05:38",
+  "errorCode": "B00000FXXXL0086",
+  "debugInfo": {
+    "fileName": "settings.js",
+    "lineNumber": "86",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0086"
+  }
+}
+[06-Jun-2025 16:05:38] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 16:05:38] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] ReferenceError: buildProjectOrgFile is not defined | ERROR: {
+  "timestamp": "06-Jun-2025 16:05:38",
+  "errorCode": "B00000FXXXL0086",
+  "debugInfo": {
+    "fileName": "settings.js",
+    "lineNumber": "86",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0086"
+  }
+}
+[06-Jun-2025 16:05:38] [ERROR] ❌ applicationerror.js:176 -> Unhandled Promise Rejection | ERROR: {
+  "timestamp": "06-Jun-2025 16:05:38",
+  "errorCode": "B00000FXXXL0086",
+  "debugInfo": {
+    "fileName": "settings.js",
+    "lineNumber": "86",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0086"
+  }
+}
+[06-Jun-2025 16:05:38] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 16:05:38] [ERROR] ❌ applicationerror.js:141 -> [ERROR] Error: [ERROR] ReferenceError: buildProjectOrgFile is not defined | ERROR: {
+  "timestamp": "06-Jun-2025 16:05:38",
+  "errorCode": "B00000FXXXL0086",
+  "debugInfo": {
+    "fileName": "settings.js",
+    "lineNumber": "86",
+    "pageNumber": "Unknown",
+    "errorCode": "B00000FXXXL0086"
+  }
+}
+[06-Jun-2025 16:17:25] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:17:26] [INFO] ℹ️ utils.js:284 -> 
+📂 Organizing Project Structure  
+This command helps maintain a structured file naming system, ensuring all essential files are correctly mapped.  
+
+📌 How It Works:  
+✅ Validates existing project files to confirm expected structure  
+🔹 Ensures proper error tracking by mapping filenames  
+⚙️ Helps maintain consistent organization across modules  
+
+🛠️ Example Usage:  
+🔥 Run the following to verify and structure project files:  
+<your-program> --projectstructure
+
+[06-Jun-2025 16:17:44] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:17:44] [ERROR] ❌ utils.js:315 -> Error building project organization file. | ERROR: {}
+[06-Jun-2025 16:21:10] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:21:10] [ERROR] ❌ utils.js:315 -> Error building project organization file. | ERROR: {}
+[06-Jun-2025 16:21:24] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:21:25] [ERROR] ❌ utils.js:315 -> Error building project organization file. | ERROR: {}
+[06-Jun-2025 16:22:46] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:23:19] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:25:36] [ERROR] ❌ utils.js:315 -> Error building project organization file. | ERROR: {}
+[06-Jun-2025 16:26:18] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:26:44] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:26:50] [INFO] ℹ️ utils.js:172 -> Exploring Directory [server]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [.env]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [index.conf]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 16:26:50] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ utils.js:172 -> Exploring Directory [controllers]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [users.controller.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ utils.js:172 -> Exploring Directory [node_helpers]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [globalErrorHandler.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [helpForHelpers.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 16:26:50] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentials]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [mssqldb_helper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentialsbackup]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [dbconnection.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 16:26:50] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ utils.js:172 -> Exploring Directory [helpfiles]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [helpfortopics.js]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ utils.js:172 -> Exploring Directory [routes]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 16:26:51] [INFO] ℹ️ Unknown:Unknown -> Processing [user.js]
+[06-Jun-2025 16:27:29] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:27:30] [INFO] ℹ️ utils.js:258 -> Created file: C:\Users\vsher\Desktop\Sv\server\routes\routedefinitions.js
+[06-Jun-2025 16:27:30] [INFO] ℹ️ utils.js:258 -> Created file: C:\Users\vsher\Desktop\Sv\server\projectOrganization.js
+[06-Jun-2025 16:27:30] [SUCCESS] ✅ utils.js:243 -> Project setup completed successfully.
+[06-Jun-2025 16:27:40] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:27:43] [INFO] ℹ️ utils.js:172 -> Exploring Directory [server]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [.env]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [index.conf]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 16:27:43] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [projectOrganization.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ utils.js:172 -> Exploring Directory [controllers]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [users.controller.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ utils.js:172 -> Exploring Directory [node_helpers]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [globalErrorHandler.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [helpForHelpers.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 16:27:43] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentials]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [mssqldb_helper.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 16:27:43] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentialsbackup]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [dbconnection.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ utils.js:172 -> Exploring Directory [helpfiles]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [helpfortopics.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ utils.js:172 -> Exploring Directory [routes]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 16:27:44] [INFO] ℹ️ Unknown:Unknown -> Processing [user.js]
+[06-Jun-2025 16:28:56] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:28:56] [INFO] ℹ️ utils.js:172 -> Exploring Directory [server]
+[06-Jun-2025 16:28:56] [INFO] ℹ️ Unknown:Unknown -> Processing [.env]
+[06-Jun-2025 16:28:56] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 16:28:56] [INFO] ℹ️ Unknown:Unknown -> Processing [index.conf]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 16:28:57] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [projectOrganization.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ utils.js:172 -> Exploring Directory [controllers]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [users.controller.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ utils.js:172 -> Exploring Directory [node_helpers]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [globalErrorHandler.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [helpForHelpers.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 16:28:57] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentials]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [mssqldb_helper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentialsbackup]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [dbconnection.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ utils.js:172 -> Exploring Directory [helpfiles]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [helpfortopics.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ utils.js:172 -> Exploring Directory [routes]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 16:28:57] [INFO] ℹ️ Unknown:Unknown -> Processing [user.js]
+[06-Jun-2025 16:30:12] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:30:12] [ERROR] ❌ applicationerror.js:169 -> Uncaught Exception: Cannot find module './routes/routedefinitions.js'
+Require stack:
+- C:\Users\vsher\Desktop\Sv\server\routedefinitions.js
+- C:\Users\vsher\Desktop\Sv\server\index.js | ERROR: {
+  "code": "MODULE_NOT_FOUND",
+  "requireStack": [
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\routedefinitions.js",
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\index.js"
+  ]
+}
+[06-Jun-2025 16:30:12] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 16:30:12] [ERROR] ❌ applicationerror.js:141 -> [MODULE_NOT_FOUND] Error: Cannot find module './routes/routedefinitions.js'
+Require stack:
+- C:\Users\vsher\Desktop\Sv\server\routedefinitions.js
+- C:\Users\vsher\Desktop\Sv\server\index.js | ERROR: {
+  "code": "MODULE_NOT_FOUND",
+  "requireStack": [
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\routedefinitions.js",
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\index.js"
+  ]
+}
+[06-Jun-2025 16:30:36] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:30:37] [INFO] ℹ️ utils.js:172 -> Exploring Directory [server]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [.env]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [index.conf]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 16:30:37] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [projectOrganization.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ utils.js:172 -> Exploring Directory [controllers]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [users.controller.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ utils.js:172 -> Exploring Directory [node_helpers]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [globalErrorHandler.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [helpForHelpers.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 16:30:37] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentials]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [mssqldb_helper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentialsbackup]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [dbconnection.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ utils.js:172 -> Exploring Directory [helpfiles]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [helpfortopics.js]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ utils.js:172 -> Exploring Directory [routes]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 16:30:37] [INFO] ℹ️ Unknown:Unknown -> Processing [user.js]
+[06-Jun-2025 16:34:54] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:34:54] [ERROR] ❌ applicationerror.js:169 -> Uncaught Exception: Cannot find module './routedefinitions'
+Require stack:
+- C:\Users\vsher\Desktop\Sv\server\index.js | ERROR: {
+  "code": "MODULE_NOT_FOUND",
+  "requireStack": [
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\index.js"
+  ]
+}
+[06-Jun-2025 16:34:54] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 16:34:54] [ERROR] ❌ applicationerror.js:141 -> [MODULE_NOT_FOUND] Error: Cannot find module './routedefinitions'
+Require stack:
+- C:\Users\vsher\Desktop\Sv\server\index.js | ERROR: {
+  "code": "MODULE_NOT_FOUND",
+  "requireStack": [
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\index.js"
+  ]
+}
+[06-Jun-2025 16:35:39] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:35:39] [ERROR] ❌ applicationerror.js:169 -> Uncaught Exception: Cannot find module './routes'
+Require stack:
+- C:\Users\vsher\Desktop\Sv\server\index.js | ERROR: {
+  "code": "MODULE_NOT_FOUND",
+  "requireStack": [
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\index.js"
+  ]
+}
+[06-Jun-2025 16:35:39] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 16:35:39] [ERROR] ❌ applicationerror.js:141 -> [MODULE_NOT_FOUND] Error: Cannot find module './routes'
+Require stack:
+- C:\Users\vsher\Desktop\Sv\server\index.js | ERROR: {
+  "code": "MODULE_NOT_FOUND",
+  "requireStack": [
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\index.js"
+  ]
+}
+[06-Jun-2025 16:38:46] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 16:38:46] [INFO] ℹ️ utils.js:258 -> Created file: C:\Users\vsher\Desktop\Sv\server\routes\routedefinitions.js
+[06-Jun-2025 16:38:46] [SUCCESS] ✅ utils.js:243 -> Project setup completed successfully.
+[06-Jun-2025 17:00:23] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:00:23] [INFO] ℹ️ utils.js:250 -> Routes directory [C:\Users\vsher\Desktop\Sv\server\routes] already exists.
+[06-Jun-2025 17:00:23] [INFO] ℹ️ utils.js:265 -> Project organization file [C:\Users\vsher\Desktop\Sv\server\projectOrganization.js] is already present.
+[06-Jun-2025 17:00:23] [INFO] ℹ️ utils.js:296 -> Project configuration file [C:\Users\vsher\Desktop\Sv\server\index.conf] already exists.
+[06-Jun-2025 17:00:48] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:00:49] [INFO] ℹ️ utils.js:250 -> Routes directory [C:\Users\vsher\Desktop\Sv\server\routes] already exists.
+[06-Jun-2025 17:00:49] [INFO] ℹ️ utils.js:265 -> Project organization file [C:\Users\vsher\Desktop\Sv\server\projectOrganization.js] is already present.
+[06-Jun-2025 17:00:49] [INFO] ℹ️ utils.js:296 -> Project configuration file [C:\Users\vsher\Desktop\Sv\server\index.conf] already exists.
+[06-Jun-2025 17:01:09] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:01:09] [INFO] ℹ️ utils.js:250 -> Routes directory [C:\Users\vsher\Desktop\Sv\server\routes] already exists.
+[06-Jun-2025 17:01:09] [INFO] ℹ️ utils.js:256 -> Creating [C:\Users\vsher\Desktop\Sv\server\projectOrganization.js].
+[06-Jun-2025 17:01:09] [INFO] ℹ️ utils.js:296 -> Project configuration file [C:\Users\vsher\Desktop\Sv\server\index.conf] already exists.
+[06-Jun-2025 17:01:28] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:01:29] [INFO] ℹ️ utils.js:172 -> Exploring Directory [server]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [.env]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [index.conf]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 17:01:29] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [projectOrganization.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ utils.js:172 -> Exploring Directory [controllers]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [users.controller.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ utils.js:172 -> Exploring Directory [node_helpers]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [globalErrorHandler.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [helpForHelpers.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 17:01:29] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentials]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [mssqldb_helper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentialsbackup]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [dbconnection.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 17:01:29] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 17:01:30] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 17:01:30] [INFO] ℹ️ utils.js:172 -> Exploring Directory [helpfiles]
+[06-Jun-2025 17:01:30] [INFO] ℹ️ Unknown:Unknown -> Processing [helpfortopics.js]
+[06-Jun-2025 17:01:30] [INFO] ℹ️ utils.js:172 -> Exploring Directory [routes]
+[06-Jun-2025 17:01:30] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 17:01:30] [INFO] ℹ️ Unknown:Unknown -> Processing [user.js]
+[06-Jun-2025 17:02:07] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:02:07] [INFO] ℹ️ utils.js:250 -> Routes directory [C:\Users\vsher\Desktop\Sv\server\routes] already exists.
+[06-Jun-2025 17:02:07] [INFO] ℹ️ utils.js:265 -> Project organization file [C:\Users\vsher\Desktop\Sv\server\projectOrganization.js] is already present.
+[06-Jun-2025 17:02:07] [INFO] ℹ️ utils.js:296 -> Project configuration file [C:\Users\vsher\Desktop\Sv\server\index.conf] already exists.
+[06-Jun-2025 17:02:15] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:02:16] [INFO] ℹ️ utils.js:172 -> Exploring Directory [server]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [.env]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [index.conf]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 17:02:16] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [projectOrganization.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ utils.js:172 -> Exploring Directory [controllers]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [users.controller.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ utils.js:172 -> Exploring Directory [node_helpers]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [globalErrorHandler.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [helpForHelpers.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 17:02:16] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentials]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [mssqldb_helper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentialsbackup]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [dbconnection.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ utils.js:172 -> Exploring Directory [helpfiles]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [helpfortopics.js]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ utils.js:172 -> Exploring Directory [routes]
+[06-Jun-2025 17:02:16] [INFO] ℹ️ Unknown:Unknown -> Processing [user.js]
+[06-Jun-2025 17:14:16] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:14:17] [INFO] ℹ️ utils.js:172 -> Exploring Directory [server]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [.env]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [index.conf]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 17:14:17] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [projectOrganization.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ utils.js:172 -> Exploring Directory [controllers]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [users.controller.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ utils.js:172 -> Exploring Directory [node_helpers]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [globalErrorHandler.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [helpForHelpers.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 17:14:17] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentials]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [mssqldb_helper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ utils.js:172 -> Exploring Directory [essentialsbackup]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [applicationerror.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [configObject.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [dbconnection.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [emailhelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [fileuploadhelpernew_new_backup.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [gttablehelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [httphelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [implementationmanager.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [keymaphelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [mongodb_helper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [mysqldb_helper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [packages.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [settings.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [tenant.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [tenantmanager_helper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [usersession_Old.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [utils.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [wsockethelper.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ utils.js:172 -> Exploring Directory [gtconfig]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [gt_config.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ utils.js:172 -> Exploring Directory [helpfiles]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [helpfortopics.js]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ utils.js:172 -> Exploring Directory [routes]
+[06-Jun-2025 17:14:17] [INFO] ℹ️ Unknown:Unknown -> Processing [user.js]
+[06-Jun-2025 17:14:17] [SUCCESS] ✅ utils.js:253 -> Project organization files built successfully.
+[06-Jun-2025 17:42:55] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:43:00] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 17:43:00] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 17:43:00] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 17:43:00] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 17:43:00] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 17:43:00] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 17:43:00] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 17:43:00] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 17:43:18] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:43:19] [INFO] ℹ️ utils.js:172 -> Exploring Directory [server]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ Unknown:Unknown -> Processing [.env]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ Unknown:Unknown -> Processing [application.log]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ Unknown:Unknown -> Processing [index.conf]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ Unknown:Unknown -> Processing [index.js]
+[06-Jun-2025 17:43:19] [WARNING] ⚠️ Unknown:Unknown -> The node_modules directory will not be considered and processed.
+[06-Jun-2025 17:43:19] [INFO] ℹ️ Unknown:Unknown -> Processing [package-lock.json]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ Unknown:Unknown -> Processing [package.json]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ Unknown:Unknown -> Processing [routedefinitions.js]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ utils.js:172 -> Exploring Directory [controllers]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ Unknown:Unknown -> Processing [users.controller.js]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ utils.js:172 -> Exploring Directory [routes]
+[06-Jun-2025 17:43:19] [INFO] ℹ️ Unknown:Unknown -> Processing [user.js]
+[06-Jun-2025 17:43:20] [SUCCESS] ✅ utils.js:253 -> Project organization files built successfully.
+[06-Jun-2025 17:44:19] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 17:44:20] [ERROR] ❌ applicationerror.js:169 -> Uncaught Exception: Cannot find module './routedefinitions'
+Require stack:
+- C:\Users\vsher\Desktop\Sv\server\index.js | ERROR: {
+  "code": "MODULE_NOT_FOUND",
+  "requireStack": [
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\index.js"
+  ]
+}
+[06-Jun-2025 17:44:20] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: applicationerror.js
+[06-Jun-2025 17:44:20] [ERROR] ❌ applicationerror.js:141 -> [MODULE_NOT_FOUND] Error: Cannot find module './routedefinitions'
+Require stack:
+- C:\Users\vsher\Desktop\Sv\server\index.js | ERROR: {
+  "code": "MODULE_NOT_FOUND",
+  "requireStack": [
+    "C:\\Users\\vsher\\Desktop\\Sv\\server\\index.js"
+  ]
+}
+[06-Jun-2025 18:09:27] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:09:28] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:09:28] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:09:28] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:09:28] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:09:28] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:09:28] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:09:28] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:09:28] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:11:35] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: httphelper.js
+[06-Jun-2025 18:11:35] [ERROR] ❌ applicationerror.js:141 -> Invalid route or path: /user/login
+[06-Jun-2025 18:12:05] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:12:06] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:12:06] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:12:06] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:12:06] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:12:06] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:12:06] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:12:06] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:12:06] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:12:11] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: httphelper.js
+[06-Jun-2025 18:12:11] [ERROR] ❌ applicationerror.js:141 -> Invalid route or path: /user/login
+[06-Jun-2025 18:12:29] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass, isDeleted FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:12:30] [ERROR] ❌ mysqldb_helper.js:71 -> Error executing MySQL query: Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES) | ERROR: {
+  "message": "Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES)",
+  "code": "ER_ACCESS_DENIED_ERROR",
+  "errno": 1045,
+  "sqlState": "28000",
+  "sqlMessage": "Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES)"
+}
+[06-Jun-2025 18:12:30] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: Unknown
+[06-Jun-2025 18:12:30] [ERROR] ❌ applicationerror.js:141 -> [ER_ACCESS_DENIED_ERROR] Error: Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES) | ERROR: {
+  "message": "Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES)",
+  "code": "ER_ACCESS_DENIED_ERROR",
+  "errno": 1045,
+  "sqlState": "28000",
+  "sqlMessage": "Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES)"
+}
+[06-Jun-2025 18:19:36] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:19:37] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:19:37] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:19:37] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:19:37] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:19:37] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:19:37] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:19:37] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:19:37] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:19:52] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass, isDeleted FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:19:52] [ERROR] ❌ mysqldb_helper.js:71 -> Error executing MySQL query: Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES) | ERROR: {
+  "message": "Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES)",
+  "code": "ER_ACCESS_DENIED_ERROR",
+  "errno": 1045,
+  "sqlState": "28000",
+  "sqlMessage": "Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES)"
+}
+[06-Jun-2025 18:19:52] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: Unknown
+[06-Jun-2025 18:19:52] [ERROR] ❌ applicationerror.js:141 -> [ER_ACCESS_DENIED_ERROR] Error: Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES) | ERROR: {
+  "message": "Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES)",
+  "code": "ER_ACCESS_DENIED_ERROR",
+  "errno": 1045,
+  "sqlState": "28000",
+  "sqlMessage": "Access denied for user 'sv'@'i5C74DCA5.versanet.de' (using password: YES)"
+}
+[06-Jun-2025 18:21:24] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:21:25] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:21:25] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:21:25] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:21:25] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:21:25] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:21:25] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:21:25] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:21:25] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:21:27] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass, isDeleted FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:21:28] [ERROR] ❌ mysqldb_helper.js:71 -> Error executing MySQL query: Table 'project.users' doesn't exist | ERROR: {
+  "message": "Table 'project.users' doesn't exist",
+  "code": "ER_NO_SUCH_TABLE",
+  "errno": 1146,
+  "sql": "SELECT userId, userMail, userName, pass, isDeleted FROM users WHERE userName = NULL AND pass = NULL",
+  "sqlState": "42S02",
+  "sqlMessage": "Table 'project.users' doesn't exist"
+}
+[06-Jun-2025 18:21:28] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: Unknown
+[06-Jun-2025 18:21:28] [ERROR] ❌ applicationerror.js:141 -> [ER_NO_SUCH_TABLE] Error: Table 'project.users' doesn't exist | ERROR: {
+  "message": "Table 'project.users' doesn't exist",
+  "code": "ER_NO_SUCH_TABLE",
+  "errno": 1146,
+  "sql": "SELECT userId, userMail, userName, pass, isDeleted FROM users WHERE userName = NULL AND pass = NULL",
+  "sqlState": "42S02",
+  "sqlMessage": "Table 'project.users' doesn't exist"
+}
+[06-Jun-2025 18:29:14] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass, isDeleted FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:29:14] [ERROR] ❌ mysqldb_helper.js:71 -> Error executing MySQL query: Unknown column 'isDeleted' in 'field list' | ERROR: {
+  "message": "Unknown column 'isDeleted' in 'field list'",
+  "code": "ER_BAD_FIELD_ERROR",
+  "errno": 1054,
+  "sql": "SELECT userId, userMail, userName, pass, isDeleted FROM users WHERE userName = NULL AND pass = NULL",
+  "sqlState": "42S22",
+  "sqlMessage": "Unknown column 'isDeleted' in 'field list'"
+}
+[06-Jun-2025 18:29:14] [WARNING] ⚠️ applicationerror.js:129 -> File not found in project structure: Unknown
+[06-Jun-2025 18:29:14] [ERROR] ❌ applicationerror.js:141 -> [ER_BAD_FIELD_ERROR] Error: Unknown column 'isDeleted' in 'field list' | ERROR: {
+  "message": "Unknown column 'isDeleted' in 'field list'",
+  "code": "ER_BAD_FIELD_ERROR",
+  "errno": 1054,
+  "sql": "SELECT userId, userMail, userName, pass, isDeleted FROM users WHERE userName = NULL AND pass = NULL",
+  "sqlState": "42S22",
+  "sqlMessage": "Unknown column 'isDeleted' in 'field list'"
+}
+[06-Jun-2025 18:29:52] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:29:53] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:29:53] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:29:53] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:29:53] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:29:53] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:29:53] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:29:53] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:29:53] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:29:56] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:29:56] [SUCCESS] ✅ applicationerror.js:157 -> Success: sucess
+[06-Jun-2025 18:33:51] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:33:51] [SUCCESS] ✅ applicationerror.js:157 -> Success: sucess
+[06-Jun-2025 18:33:59] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:33:59] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:33:59] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:33:59] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:33:59] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:33:59] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:33:59] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:33:59] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:33:59] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:34:02] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:34:02] [SUCCESS] ✅ applicationerror.js:157 -> Success: sucess
+[06-Jun-2025 18:34:33] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:34:34] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:34:34] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:34:34] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:34:34] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:34:34] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:34:34] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:34:34] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:34:34] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:34:42] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:34:43] [SUCCESS] ✅ applicationerror.js:157 -> Success: sucess
+[06-Jun-2025 18:35:14] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:35:15] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:35:15] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:35:15] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:35:15] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:35:15] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:35:15] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:35:15] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:35:15] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:35:22] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:36:14] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:36:15] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:36:15] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:36:15] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:36:15] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:36:15] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:36:15] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:36:15] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:36:15] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:36:17] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:36:17] [SUCCESS] ✅ applicationerror.js:157 -> Success: sucess
+[06-Jun-2025 18:36:45] [WARNING] ⚠️ mysqldb_helper.js:27 -> Warning: Database name is missing in environment config. Skipping MySQL connection setup.
+[06-Jun-2025 18:36:45] [INFO] ℹ️ implementationmanager.js:16 -> Initializing Implementation...
+[06-Jun-2025 18:36:45] [INFO] ℹ️ implementationmanager.js:77 -> Initializing DB Connections...
+[06-Jun-2025 18:36:45] [INFO] ℹ️ implementationmanager.js:85 -> Setting up Individual Implementation DB Connections...
+[06-Jun-2025 18:36:45] [SUCCESS] ✅ mysqldb_helper.js:33 -> MySQL connection pool established for project
+[06-Jun-2025 18:36:45] [SUCCESS] ✅ implementationmanager.js:91 -> Connected to MySQL successfully!
+[06-Jun-2025 18:36:45] [INFO] ℹ️ implementationmanager.js:108 -> Fetching database key mappings for mysql...
+[06-Jun-2025 18:36:45] [WARNING] ⚠️ implementationmanager.js:23 -> No Key Map found. Unable to set default key map.
+[06-Jun-2025 18:36:45] [INFO] ℹ️ implementationmanager.js:61 -> Starting HTTP Server...
+[06-Jun-2025 18:36:48] [INFO] ℹ️ mysqldb_helper.js:67 -> Executing MySQL query: SELECT userId, userMail, userName, pass FROM users WHERE userName = ? AND pass = ?
+[06-Jun-2025 18:36:48] [SUCCESS] ✅ applicationerror.js:157 -> Success: sucess
