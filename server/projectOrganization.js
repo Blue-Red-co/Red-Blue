@@ -2,11 +2,13 @@ const __projectStructure = [
 	// 0
 'index.js',
 	// 1
-'routedefinitions.js',
+'projectOrganization.js',
 	// 2
-'users.controller.js',
+'routedefinitions.js',
 	// 3
+'users.controller.js',
+	// 4
 'user.js'
-// 4
+// 5
 ];
 module.exports = { __projectStructure };
