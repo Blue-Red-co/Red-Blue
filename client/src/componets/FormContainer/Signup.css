@@ -132,9 +132,9 @@ form.sign-in-form {
   border-color: #4481eb;
 }
 
-.btn {
+.btn  {
   width: 150px;
-  background-color: #5995fd;
+  background-color: #03a9f4;
   border: none;
   outline: none;
   height: 49px;
@@ -146,11 +146,30 @@ form.sign-in-form {
   cursor: pointer;
   transition: 0.5s;
 }
+.btn1
+{
+  
+    width: 150px;
+    background-color: #f43648;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  
+}
 
 .btn:hover {
-  background-color: #4d84e2;
+  background-color:#0087c5;
 }
-.panels-container {
+.btn1:hover {
+  background-color:#fd0e26;
+} .panels-container {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -168,10 +187,27 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+  background-image: linear-gradient(-90deg, #03a9f4 50%, #f43648  50%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
+}
+
+@media (max-width: 870px)
+{
+  .container:before {
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(-200deg, #f43648 40%,  #4d84e2 40%);
+    transition: 1.8s ease-in-out;
+    border-radius: 50%;
+    z-index: 6;
+  }
 }
 
 .image {

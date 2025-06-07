@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import "./Signup.css";
+import abc from "../../Axios/Axios"
+
 
 
  // Import CSS file
 
 const Login = () => {
   const [isSignUp, setIsSignUp] = useState(false);
-
+    
+  abc.post('/login')
   return (
     <div className={`container ${isSignUp ? "sign-up-mode" : ""}`}>
       {/* Forms Container */}
@@ -48,8 +51,8 @@ const Login = () => {
               <i className="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" className="btn" value="Sign up" />
-            <p className="social-text">Or Sign up with social platforms</p>
+            <input type="submit" className="btn1" value="Sign up" />
+             <p className="social-text">Or Sign up with social platforms</p>
             <div className="social-media">
               <a href="https://sherin.fun" className="social-icon"><i className="fab fa-facebook-f"></i></a>
               <a href="https://sherin.fun" className="social-icon"><i className="fab fa-twitter"></i></a>
