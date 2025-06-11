@@ -5,7 +5,9 @@ const login_Controller = async (req, res, next) => {
     const { userName, pass } = req.body;
     const sql = `SELECT userId, userMail, userName, pass FROM users WHERE userName = ? AND pass = ?`;
     const result = await MySQLDB_Helper.executeQuery(sql, [userName, pass]);
-    if (!result) {
+    console.log(result.lenght === 0);
+    
+    if ( result.length === 0) {
         throw new ApplicationError({ message: "login detail incorrect", location: __locationObject, errorObject: new Error("login details is wrong") })
     } else {
         res.json(ApplicationSuccess.getSuccessObject(result, "sucess"));
