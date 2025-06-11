@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./componets/home";
 import Login from "./componets/FormContainer/Signup";
 import ErrorBoundary from "./componets/ErrorBoundary ";
+import { ToastContainer } from 'react-toastify';
 
 const router = createBrowserRouter([
   { path: "/", element:  <Login /> },
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <ErrorBoundary>
+      <ToastContainer draggable />
       <RouterProvider router={router} />
     </ErrorBoundary>
   );

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Signup.css";
 import req from "../../Axios/Axios"
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
+
 
 
 // Import CSS file
@@ -11,7 +13,8 @@ const Login = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [userName, setUserName] = useState('');
   const [pass, setPass] = useState('');
-  const [userMail, setUserMAil] = useState('')
+  const [userMail, setUserMAil] = useState('');
+  const nav = useNavigate();
 
   const callLoginReq = async (e) => {
     e.preventDefault()
@@ -24,7 +27,8 @@ const Login = () => {
       if (res.data.errorCode !== '000000') {
         toast.error(res.data.errorDescription)
       } else {
-        toast.success("Login sucess")
+        toast.success("Login sucess");
+        nav('/home')
       }
     };
   }
@@ -47,8 +51,6 @@ const Login = () => {
   }
   return (
     <div className={`container ${isSignUp ? "sign-up-mode" : ""}`}>
-      <ToastContainer> </ToastContainer>
-
       {/* Forms Container */}
       <div className="forms-container">
         <div className="signin-signup">
