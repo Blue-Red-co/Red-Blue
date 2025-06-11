@@ -15,23 +15,34 @@ const Login = () => {
 
   const callLoginReq = async (e) => {
     e.preventDefault()
-    const res = await req.post('/user/login', {
-      userName, pass
-    })
-    if (res.data.errorCode !== '000000') {
-      toast.error(res.data.errorDescription)
+    if (!userName || !pass) {
+      toast.error("Enetr Somethging you Bitch")
     } else {
-      toast.success("Login sucess")
-
+      const res = await req.post('/user/login', {
+        userName, pass
+      })
+      if (res.data.errorCode !== '000000') {
+        toast.error(res.data.errorDescription)
+      } else {
+        toast.success("Login sucess")
+      }
     };
   }
 
   const callSignupReq = async (e) => {
     e.preventDefault()
-    const res = await req.post('/user/signup', {
-      userName, pass
-    })
-    console.log(res.data);
+    if (!userName || !pass || userMail) {
+      toast.error("Enetr Somethging you Bitch")
+    } else {
+      const res = await req.post('/user/signup', {
+        userName, userMail, pass
+      })
+      if (res.data.errorCode !== '000000') {
+        toast.error(res.data.errorDescription)
+      } else {
+        toast.success("Account created Sucess")
+      }
+    };
 
   }
   return (

@@ -1,11 +1,19 @@
 import React from "react";
-import Login from "./componets/FormContainer/Signup"; // Importing the complete login/signup page
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./componets/home";
+import Login from "./componets/FormContainer/Signup";
+import ErrorBoundary from "./componets/ErrorBoundary ";
+
+const router = createBrowserRouter([
+  { path: "/", element:  <Login /> },
+  { path: "/home", element: <Home /> },
+]);
 
 const App = () => {
   return (
-    <div>
-      <Login /> {/* Rendering the complete login/signup page */}
-    </div>
+    <ErrorBoundary>
+      <RouterProvider router={router} />
+    </ErrorBoundary>
   );
 };
 
