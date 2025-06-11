@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0",
-    "node_helper": "file:../node_helpers"
+    "node_helper": "file:../../node_helper-1.0.0.tgz"
   }
 }
