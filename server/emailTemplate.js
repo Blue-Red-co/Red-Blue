@@ -13,7 +13,7 @@ const defaultEmailTemplates = {
             SuccessMessage : {
                 emailSubject: 'Registraion success mail',
                 emailBody: `   Welcome {{userName}}, <br /> <br /> 
-                                                            You have succesfully registered on satheclasses for free test. <br /> 
+                                                            You have succesfully registered on <b>Red&Blue </b> for free test. <br /> 
                                                             Below are the Login creadentials to give free test. <br />
                                                             LoginId:  {{userName}} <br />
                                                             Password:  {{pass}} <br /> <br />

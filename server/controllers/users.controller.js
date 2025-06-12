@@ -1,4 +1,4 @@
-const { ApplicationError, ApplicationSuccess, MySQLDB_Helper, logMessage } = require('node_helper');
+const { ApplicationError, ApplicationSuccess, MySQLDB_Helper, logMessage, Email_Helper } = require('node_helper');
 
 
 const login_Controller = async (req, res, next) => {
@@ -34,7 +34,7 @@ const createUser_controller = async (req, res, next) => {
                 ApplicationSuccess.getSuccessObject(result, "error")
             )
         }
-        const obj  = {["sherinv.de@gmail.com"]:{
+        const obj  = {[userMail]:{
                         userName,
                         pass
 

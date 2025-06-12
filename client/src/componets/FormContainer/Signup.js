@@ -13,7 +13,7 @@ const Login = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [userName, setUserName] = useState('');
   const [pass, setPass] = useState('');
-  const [userMail, setUserMAil] = useState('');
+  const [userMail, setUserMail] = useState('');
   const nav = useNavigate();
 
   const callLoginReq = async (e) => {
@@ -35,8 +35,8 @@ const Login = () => {
 
   const callSignupReq = async (e) => {
     e.preventDefault()
-    if (!userName || !pass || userMail) {
-      toast.error("Enetr Somethging you Bitch")
+    if (!userName || !pass || !userMail) {
+      toast.error("Enter Somethging you Bitch")
     } else {
       const res = await req.post('/user/signup', {
         userName, userMail, pass
@@ -84,7 +84,7 @@ const Login = () => {
             </div>
             <div className="input-field">
               <i className="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" value={userMail} onChange={(e) => { setUserMAil(e.target.value) }} />
+              <input type="email" placeholder="Email" value={userMail} onChange={(e) => { setUserMail(e.target.value) }} />
             </div>
             <div className="input-field">
               <i className="fas fa-lock"></i>
