@@ -4,16 +4,20 @@ const {
   ApplicationError,
   VW_Environment,
   Implementation_Manager,
+  Email_Helper
 } = require('node_helper');
 initializeGlobalErrorHandler();
 
 const routes = require('./routedefinitions');
+const defaultEmailTemplates = require('./emailTemplate');
 
 
 const initServer = async () => {
   try {
     await VW_Environment.setEnvironment();
     await Implementation_Manager.initializeImplementation();
+    Email_Helper.setupEmailSender("test", { user: "apikey", senderEmailID: "admin@sherin.fun", pass: "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", senderName: "SherinV", host: "smtp.sendgrid.net", port: 587 })
+    Email_Helper.setDefaultTemplates(defaultEmailTemplates["defaultEmailTemplates"]);
     Implementation_Manager.initializeHttpAndStartServer(routes);
 
   } catch (err) {

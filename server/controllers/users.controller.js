@@ -24,13 +24,25 @@ const createUser_controller = async (req, res, next) => {
     if (!result) {
         throw new ApplicationError({ message: "User data is not in proper format", location: __locationObject, errorObject: Error("user data is not proper error from mysql") });
     } else {
-        res.json(
-            ApplicationSuccess.getSuccessObject(result, "Sucess")
-        )
+        const success = () => {
+            res.json(
+                ApplicationSuccess.getSuccessObject(result, "send mail success")
+            )
+        }
+        const error = () => {
+            res.json(
+                ApplicationSuccess.getSuccessObject(result, "error")
+            )
+        }
+        const obj  = {["sherinv.de@gmail.com"]:{
+                        userName,
+                        pass
+
+        }}
+        await Email_Helper.sendEmailToIndividualUsers("test","SuccessMessage",{}, obj,["vsherin4@gmail.com"],{ successCallback: success, failuerCallback: error })
     }
 
 }
-
 module.exports = {
     login_Controller,
     createUser_controller
