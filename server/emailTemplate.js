@@ -13,10 +13,10 @@ const defaultEmailTemplates = {
             SuccessMessage : {
                 emailSubject: 'Registraion success mail',
                 emailBody: `   Welcome {{userName}}, <br /> <br /> 
-                                                            You have succesfully registered on <b>Red&Blue </b> for free test. <br /> 
-                                                            Below are the Login creadentials to give free test. <br />
-                                                            LoginId:  {{userName}} <br />
-                                                            Password:  {{pass}} <br /> <br />
+                                                            You have succesfully registered on <b>Red&Blue </b> <br /> 
+                                                            Below is the OTP  to give verify it's your own stuff. <br />
+                                                            OTP:  <h1>{{otp}}</h1> <br />
+
                                                             `,
                 emailFooter: `Thanks <br />
                                                 sherin.fun <br />

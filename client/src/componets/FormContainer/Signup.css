@@ -11,12 +11,33 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
+.app-wrapper {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+  transition: filter 0.5s ease;
+}
+
+.main-content.blurred {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+}
+
 .container {
   position: relative;
   width: 100%;
-  background-color: #fff;
   min-height: 100vh;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .forms-container {
@@ -132,7 +153,7 @@ form.sign-in-form {
   border-color: #4481eb;
 }
 
-.btn  {
+.btn {
   width: 150px;
   background-color: #03a9f4;
   border: none;
@@ -146,30 +167,31 @@ form.sign-in-form {
   cursor: pointer;
   transition: 0.5s;
 }
-.btn1
-{
-  
-    width: 150px;
-    background-color: #f43648;
-    border: none;
-    outline: none;
-    height: 49px;
-    border-radius: 49px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: 0.5s;
-  
+
+.btn1 {
+  width: 150px;
+  background-color: #f43648;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn:hover {
-  background-color:#0087c5;
+  background-color: #0087c5;
 }
+
 .btn1:hover {
-  background-color:#fd0e26;
-} .panels-container {
+  background-color: #fd0e26;
+}
+
+.panels-container {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -187,26 +209,15 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-90deg, #03a9f4 50%, #f43648  50%);
+  background-image: linear-gradient(-90deg, #03a9f4 50%, #f43648 50%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
 }
 
-@media (max-width: 870px)
-{
+@media (max-width: 870px) {
   .container:before {
-    content: "";
-    position: absolute;
-    height: 2000px;
-    width: 2000px;
-    top: -10%;
-    right: 48%;
-    transform: translateY(-50%);
-    background-image: linear-gradient(-200deg, #f43648 40%,  #4d84e2 40%);
-    transition: 1.8s ease-in-out;
-    border-radius: 50%;
-    z-index: 6;
+    background-image: linear-gradient(-200deg, #f43648 40%, #4d84e2 40%);
   }
 }
 
@@ -266,8 +277,6 @@ form.sign-in-form {
 .right-panel .content {
   transform: translateX(800px);
 }
-
-/* ANIMATION */
 
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
@@ -390,47 +399,147 @@ form.sign-in-form {
 
   .container.sign-up-mode .left-panel .image,
   .container.sign-up-mode .left-panel .content {
-    transform: translateY(-300px);
+    transform: translateX(0%);
   }
 
   .container.sign-up-mode .right-panel .image,
   .container.sign-up-mode .right-panel .content {
-    transform: translateY(0px);
-  }
-
-  .right-panel .image,
-  .right-panel .content {
-    transform: translateY(300px);
-  }
-
-  .container.sign-up-mode .signin-signup {
-    top: 5%;
-    transform: translate(-50%, 0);
+    transform: translateX(800px);
   }
 }
 
-@media (max-width: 570px) {
-  form {
-    padding: 0 1.5rem;
-  }
+/* ===================== */
+/* OTP POPUP STYLES BELOW */
+/* ===================== */
 
-  .image {
-    display: none;
-  }
-  .panel .content {
-    padding: 0.5rem 1rem;
-  }
-  .container {
-    padding: 1.5rem;
-  }
+.otp-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 48, 87, 0.28);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeInBg 0.5s ease forwards;
+}
 
-  .container:before {
-    bottom: 72%;
-    left: 50%;
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
 
-  .container.sign-up-mode:before {
-    bottom: 28%;
-    left: 50%;
+.otp-container {
+  background: white;
+  border-radius: 10px;
+  padding: 25px 40px;
+  width: 350px;
+  max-width: 90vw;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideFadeIn 0.9s ease forwards;
+  user-select: none;
+  text-align: center;
+}
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
   }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.header-form {
+  margin-bottom: 30px;
+}
+
+.auth-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background-color: rgba(4, 190, 254, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-icon i {
+  font-size: 35px;
+  color: #04befe;
+}
+
+.header-form h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.header-form p {
+  font-size: 16px;
+  color: #111;
+}
+
+.auth-pin-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.auth-pin-wrap .code-input {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  border: 1.5px solid #ced4da;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.auth-pin-wrap .code-input:focus {
+  border-color: #04befe;
+}
+
+.btn-wrap button {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: #04befe;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-wrap button {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: #04befe;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-wrap button:hover {
+  background-color: #0288d1;
 }
