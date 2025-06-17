@@ -16,11 +16,9 @@ const initServer = async () => {
   try {
     await VW_Environment.setEnvironment();
     await Implementation_Manager.initializeImplementation();
-<<<<<<< HEAD
+
     Email_Helper.setupEmailSender("test", { user: "apikey", senderEmailID: "admin@sherin.fun", pass: process.env.SMTP_APIKEY, senderName: "SherinV", host: process.env.SMTP_HOST, port: 587 })
-=======
-    Email_Helper.setupEmailSender("test", { user: "apikey", senderEmailID: "admin@sherin.fun", pass: "", senderName: "SherinV", host: "", port: 587 })
->>>>>>> eb3bf776ce53035e306b11911801e140784b6f90
+
     Email_Helper.setDefaultTemplates(defaultEmailTemplates["defaultEmailTemplates"]);
     Implementation_Manager.initializeHttpAndStartServer(routes);
     
