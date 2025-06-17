@@ -19,7 +19,7 @@ const initServer = async () => {
     Email_Helper.setupEmailSender("test", { user: "apikey", senderEmailID: "admin@sherin.fun", pass: process.env.SMTP_APIKEY, senderName: "SherinV", host: process.env.SMTP_HOST, port: 587 })
     Email_Helper.setDefaultTemplates(defaultEmailTemplates["defaultEmailTemplates"]);
     Implementation_Manager.initializeHttpAndStartServer(routes);
-
+    
   } catch (err) {
     // Ensure all errors go through the structured error handler.
     throw err instanceof ApplicationError

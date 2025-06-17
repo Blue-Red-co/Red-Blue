@@ -1,14 +1,24 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Signup.css"; // Your CSS file
 import req from "../../Axios/Axios"
-import { toast } from 'react-toastify'
+import { toast  } from 'react-toastify'
 import { useNavigate } from "react-router-dom";
+import { useLoader } from "../../LoaderContext";
 
 
-function App() {
+function App() { 
+  const {setLoading} = useLoader()
   const nav = useNavigate();
   const [isSignUpMode, setIsSignUpMode] = useState(false);
   const [showOtp, setShowOtp] = useState(false);
+  const [timer, setTimer] = useState(60);
+  const [userName, setUserName] = useState('');
+  const [pass, setPass] = useState('')
+  const [userMail, setUserMail] = useState('');
+  const [userId, setUserId] = useState('')
+  const [otp, setOtp] = useState(["", "", "", ""]);
+  const [newstringOtp, setNewOtp] = useState('')
+
 
   // Refs for OTP inputs to manage focus
   const otpRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
@@ -17,13 +27,11 @@ function App() {
   const handleSignUpClick = () => setIsSignUpMode(true);
 
   const handleShowOtp = () => setShowOtp(true);
-  const handleHideOtp = () => setShowOtp(false);
-  const [userName, setUserName] = useState('');
-  const [pass, setPass] = useState('')
-  const [userMail, setUserMail] = useState('');
-  const [userId, setUserId] = useState('')
-  const [otp, setOtp] = useState(["", "", "", ""]);
-  const [newstringOtp, setNewOtp] = useState('')
+  const handleHideOtp = (e) => {
+  if (e.target.classList.contains("otp-overlay")) {
+    setShowOtp(false);
+  }
+};
 
   // Handle OTP input change and auto focus next input
   const handleOtpChange = (e, index) => {
@@ -41,8 +49,21 @@ function App() {
     }
   };
 
-  // Convert OTP array to a single string when needed
+const startTimer = (setTimer, timer) => {
+  if (timer > 0) {
+    const interval = setInterval(() => {
+      setTimer(prevTimer => {
+        if (prevTimer <= 1) {
+          clearInterval(interval); // Stop the timer when it reaches 0
+          return 0;
+        }
+        return prevTimer - 1;
+      });
+    }, 1000);
 
+    return interval; // Return interval ID for external control if needed
+  }
+};
   // Optional: handle backspace to move focus back
   const handleOtpKeyDown = (e, index) => {
     if (e.key === "Backspace" && !e.target.value && index > 0) {
@@ -52,10 +73,13 @@ function App() {
 
 
   const handleLoginReq = async () => {
-    if (!userName && !pass) {
+    
+    if (!userName || !pass) {
       toast.error("Enter something bitch")
     } else {
+    setLoading(true)
       const res = await req.post('/user/login', { userName, pass })
+      setLoading(false)
       if (res.data.errorCode !== '000000') {
         toast.error(res.data.errorDescription)
       } else {
@@ -66,17 +90,22 @@ function App() {
   }
 
   const handleSignupreq = async () => {
-    if (!userMail && !userName && !pass) {
+    if (!userMail || !userName || !pass) {
       toast.error("Enter Something bitch")
     } else {
+      setLoading(true)
       const res = await req.post('/user/signup', { userName, userMail, pass });
+     setLoading(false)
       if (res.data.errorCode !== "000000") {
         toast.error(res.data.errorDescription);
       } else {
         toast.success("you got saved by me");
         handleShowOtp();
         setUserId(res.data.Data.insertId)
+         startTimer(setTimer, 60);
       }
+
+
     }
   }
 
@@ -86,7 +115,6 @@ function App() {
       toast.error(res.data.errorDescription);
     } else {
       toast.success(res.data.errorDescription)
-      handleHideOtp()
       nav('/home')
     }
   }
@@ -166,7 +194,7 @@ function App() {
 
       {/* OTP Popup Overlay */}
       {showOtp && (
-        <div className="otp-overlay" >
+        <div className="otp-overlay" onClick={handleHideOtp} >
           <div className="otp-container">
             <div className="header-form">
               <h4>Enter OTP</h4>
@@ -189,6 +217,7 @@ function App() {
                 />
               ))}
             </div>
+            <p className="countdown">Resend OTP in {timer} seconds</p>
             <div className="btn-wrap">
               <button onClick={handleVerfiyOtp}>Confirm</button>
             </div>
