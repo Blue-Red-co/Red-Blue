@@ -1,9 +1,14 @@
 const { ApplicationError, ApplicationSuccess, MySQLDB_Helper, logMessage, Email_Helper } = require('node_helper');
-
+const { generateOTP } = require('../helper/everywherefunction')
 
 const login_Controller = async (req, res, next) => {
     const { userName, pass } = req.body;
-    const sql = `SELECT userId, userMail, userName, pass, isActive, isDelete FROM users WHERE userName = ? AND pass = ?`;
+    const sql = `   SELECT userId, userMail, userName, pass, isActive, isDelete 
+                    FROM users 
+                    WHERE userName = ? 
+                    AND pass = ?
+                    AND isDeleted = 0
+                    AND isActive = 1`;
     const result = await MySQLDB_Helper.executeQuery(sql, [userName, pass]);
     if (result.length === 0) {
         throw new ApplicationError({ message: "login detail incorrect", location: __locationObject, errorObject: new Error("login details is wrong") })
@@ -22,12 +27,12 @@ const createUser_controller = async (req, res, next) => {
 
     let { userName, userMail, pass } = req.body;
     let otp, sql, result;
-    function generateOTP() {
-        return Math.floor(1000 + Math.random() * 9000).toString();
-    }
+
     otp = generateOTP()
 
-    const checkSql = 'SELECT userId, userMail, userName, isActive FROM users WHERE userMail = ? '
+    const checkSql = `  SELECT userId, userMail, userName, isActive 
+                        FROM users 
+                        WHERE userMail = ? `
     let mail = await MySQLDB_Helper.executeQuery(checkSql, [userMail])
 
     if (mail.length === 0) {
@@ -41,7 +46,8 @@ const createUser_controller = async (req, res, next) => {
         result.insertId = mail[0].userId
     } else {
 
-        sql = `INSERT INTO users (userName, userMail, pass, otp) VALUES (?,?,?,?) `
+        sql = ` INSERT INTO users (userName, userMail, pass, otp) 
+                VALUES (?,?,?,?) `
         result = await MySQLDB_Helper.executeQuery(sql, [userName, userMail, pass, otp])
     }
     if (!result) {
@@ -78,10 +84,14 @@ const createUser_controller = async (req, res, next) => {
 
 const verifyOtp_controller = async (req, res, next) => {
     const { otp, userId } = req.body
-    const sql = `SELECT otp FROM users WHERE userId = ?`
+    const sql = `   SELECT otp 
+                    FROM users 
+                    WHERE userId = ?`
     const result = await MySQLDB_Helper.executeQuery(sql, [userId])
     if (result[0].otp === otp) {
-        const updateSql = 'UPDATE users SET isActive =? WHERE userId = ?';
+        const updateSql = ` UPDATE users 
+                            SET isActive =? 
+                            WHERE userId = ?`;
         await MySQLDB_Helper.executeQuery(updateSql, [true, userId])
         res.json(ApplicationSuccess.getSuccessObject(result, "user verify "))
     } else {
@@ -89,8 +99,42 @@ const verifyOtp_controller = async (req, res, next) => {
     }
 
 }
+
+const forgetPassword_controller = async (req, res, next) => {
+    const { userMail } = req.body
+    const sql = `       SELECT pass 
+                        FROM users 
+                        WHERE userMail = ?`;
+    const result = await MySQLDB_Helper.executeQuery(sql, [userMail]);
+    if (!result) {
+        throw new ApplicationError({ message: "You are not there in my heart Sorry" })
+
+    } else {
+        res.json(ApplicationSuccess.getSuccessObject(result[0], "You Bitch Don't ever ask for the Password"))
+    }
+}
+
+const reSendOtp_controller = async (req, res, next) => {
+    const { userId } = req.body;
+    const otp = generateOTP()
+    const sql = `   UPDATE users
+                    SET otp = ?
+                    WHERE userId = ?`;
+    await MySQLDB_Helper.executeQuery(sql, [otp, userId]);
+    setInterval(async () => {
+        const updateSql = ` UPDATE users 
+                            SET otp = ? 
+                            WHERE userId = ?`
+        await MySQLDB_Helper.executeQuery(updateSql, [0, userId])
+        return;
+    }, 70000);
+    res.json(ApplicationSuccess.getSuccessObject(otp, "This is your stuff please you this atlest this time or else someone else will play with it"))
+
+}
 module.exports = {
     login_Controller,
     createUser_controller,
-    verifyOtp_controller
+    verifyOtp_controller,
+    forgetPassword_controller,
+    reSendOtp_controller
 }

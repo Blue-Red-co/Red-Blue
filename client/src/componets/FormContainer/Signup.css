@@ -546,3 +546,14 @@ form.sign-in-form {
 .btn-wrap button:hover {
   background-color: #0288d1;
 }
+
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.forgot-password-btn:hover {
+  text-decoration: underline;
+}

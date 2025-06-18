@@ -128,19 +128,27 @@ function App() {
             <div className="signin-signup">
               {/* Sign In Form */}
               <form action="#" className="sign-in-form">
-                <h2 className="title">Sign in</h2>
-                <div className="input-field">
-                  <i className="fas fa-user"></i>
-                  <input type="text" placeholder="Username" value={userName} onChange={(e) => { setUserName(e.target.value) }} />
-                </div>
-                <div className="input-field">
-                  <i className="fas fa-lock"></i>
-                  <input type="password" placeholder="Password" value={pass} onChange={(e) => { setPass(e.target.value) }} />
-                </div>
-                <button type="button" className="btn" onClick={handleLoginReq}>
-                  Login
-                </button>
-              </form>
+  <h2 className="title">Sign in</h2>
+  
+  <div className="input-field">
+    <i className="fas fa-user"></i>
+    <input type="text" placeholder="Username" value={userName} onChange={(e) => { setUserName(e.target.value) }} />
+  </div>
+  
+  <div className="input-field">
+    <i className="fas fa-lock"></i>
+    <input type="password" placeholder="Password" value={pass} onChange={(e) => { setPass(e.target.value) }} />
+  </div>
+  
+  <button type="button" className="btn" onClick={handleLoginReq}>
+    Login
+  </button>
+
+  {/* Forgot Password Link */}
+  <button type="button" className="btn forgot-password-btn" onClick={handleForgotPassword}>
+    Forgot Password?
+  </button>
+</form>
 
               {/* Sign Up Form */}
               <form action="#" className="sign-up-form">
