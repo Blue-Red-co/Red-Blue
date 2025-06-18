@@ -263,9 +263,9 @@ function App() {
                 />
               ))}
             </div>
-            <p className="countdown">Resend OTP in {timer} seconds <a onClick={handleResendOtp}>
+            <p className="countdown">Resend OTP in {timer} seconds <button className="otpbtn" onClick={handleResendOtp}>
               Click here
-            </a>
+            </button>
             </p>
             <div className="btn-wrap">
               <button onClick={handleVerfiyOtp}>Confirm</button>

@@ -439,7 +439,7 @@ form.sign-in-form {
   background: white;
   border-radius: 10px;
   padding: 25px 40px;
-  width: 350px;
+  width: 400px;
   max-width: 90vw;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   opacity: 0;
@@ -563,4 +563,12 @@ form.sign-in-form {
 .countdown :hover {
   text-decoration: underline;
   background-color: transparent;
+}
+.otpbtn
+{
+    background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: medium;
 }
