@@ -1,4 +1,4 @@
-// Import all necessary items from node_helper in a single require statement.
+
 const {
   initializeGlobalErrorHandler,
   ApplicationError,
@@ -21,7 +21,7 @@ const initServer = async () => {
 
     Email_Helper.setDefaultTemplates(defaultEmailTemplates["defaultEmailTemplates"]);
     Implementation_Manager.initializeHttpAndStartServer(routes);
-    
+
   } catch (err) {
     // Ensure all errors go through the structured error handler.
     throw err instanceof ApplicationError
@@ -30,5 +30,5 @@ const initServer = async () => {
   }
 };
 
-// Start the server.
+
 initServer();

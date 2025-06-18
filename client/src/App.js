@@ -9,10 +9,9 @@ import "react-toastify/dist/ReactToastify.css";
 import HashLoader from "react-spinners/HashLoader";
 import "./App.css";
 
-// 🧠 Import the loader context
+
 import { LoaderProvider, useLoader } from "./LoaderContext";
 
-// 🌀 Component that shows the loader if needed
 const GlobalLoader = () => {
   const { loading } = useLoader();
   return loading ? (
@@ -27,7 +26,7 @@ const router = createBrowserRouter([
   { path: "/home", element: <Home /> },
 ]);
 
-// 🧩 Wrap your app logic
+
 const AppWrapper = () => {
   return (
     <>
@@ -38,7 +37,7 @@ const AppWrapper = () => {
   );
 };
 
-// 🧵 Final export with LoaderProvider
+
 const App = () => {
   return (
     <LoaderProvider>

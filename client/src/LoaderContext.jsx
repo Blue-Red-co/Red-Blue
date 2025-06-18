@@ -13,7 +13,7 @@ const LoaderProvider = ({ children }) => {
     </LoaderContext.Provider>
   );
 };
-export  {
-    LoaderProvider,
-    useLoader
+export {
+  LoaderProvider,
+  useLoader
 }

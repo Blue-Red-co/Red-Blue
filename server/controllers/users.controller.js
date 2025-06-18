@@ -5,11 +5,9 @@ const login_Controller = async (req, res, next) => {
     const { userName, pass } = req.body;
     const sql = `SELECT userId, userMail, userName, pass, isActive, isDelete FROM users WHERE userName = ? AND pass = ?`;
     const result = await MySQLDB_Helper.executeQuery(sql, [userName, pass]);
-    console.log(result.lenght === 0);
-
     if (result.length === 0) {
         throw new ApplicationError({ message: "login detail incorrect", location: __locationObject, errorObject: new Error("login details is wrong") })
-    } else if (result[0].isActive == true) {
+    } else if (result[0].isActive === true) {
         res.json(ApplicationSuccess.getSuccessObject(result, "sucess "));
     } else if (result[0].isDelete === true) {
         throw new ApplicationError({ message: "Please Contact your Admin Account is Deactivated" })
@@ -33,7 +31,7 @@ const createUser_controller = async (req, res, next) => {
     let mail = await MySQLDB_Helper.executeQuery(checkSql, [userMail])
 
     if (mail.length === 0) {
-        mail[0] = { userMail: "" }
+        mail.push({ userMail: "", isActive: null })
     }
     if (mail[0].userMail === userMail && mail[0].isActive === 1) {
         throw new ApplicationError({ message: `User ${mail[0].userName} is already useing your stuff so please go and check who is cheating `, location: __locationObject })
@@ -43,21 +41,21 @@ const createUser_controller = async (req, res, next) => {
         result.insertId = mail[0].userId
     } else {
 
-        sql = `INSERT INTO users (userName, userMAil, pass, otp) VALUES (?,?,?,?) `
+        sql = `INSERT INTO users (userName, userMail, pass, otp) VALUES (?,?,?,?) `
         result = await MySQLDB_Helper.executeQuery(sql, [userName, userMail, pass, otp])
     }
     if (!result) {
         throw new ApplicationError({ message: "User data is not in proper format", location: __locationObject, errorObject: Error("user data is not proper error from mysql") });
     } else {
         const success = () => {
-            setInterval(async() => {
-            const updateSql = `UPDATE users SET otp = ? WHERE userId = ?`
-            await MySQLDB_Helper.executeQuery(updateSql,[0,mail[0].userId])
-            return;
-        }, 60000);
+            setInterval(async () => {
+                const updateSql = `UPDATE users SET otp = ? WHERE userId = ?`
+                await MySQLDB_Helper.executeQuery(updateSql, [0, mail[0].userId])
+                return;
+            }, 60000);
             res.json(
                 ApplicationSuccess.getSuccessObject(result, "send mail success")
-                
+
             )
         }
         const error = () => {

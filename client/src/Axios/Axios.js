@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const req = axios.create({
-  baseURL: `${process.env.REACT_APP_API_HOST}:3010`,
+  baseURL: `http://16.170.163.114:3010`,
   headers: {
     'X-Custom-Header': 'foobar',
     "Apikey": "heloo"

@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Signup.css"; // Your CSS file
 import req from "../../Axios/Axios"
-import { toast  } from 'react-toastify'
+import { toast } from 'react-toastify'
 import { useNavigate } from "react-router-dom";
 import { useLoader } from "../../LoaderContext";
 
 
-function App() { 
-  const {setLoading} = useLoader()
+function App() {
+  const { setLoading } = useLoader()
   const nav = useNavigate();
   const [isSignUpMode, setIsSignUpMode] = useState(false);
   const [showOtp, setShowOtp] = useState(false);
@@ -28,10 +28,10 @@ function App() {
 
   const handleShowOtp = () => setShowOtp(true);
   const handleHideOtp = (e) => {
-  if (e.target.classList.contains("otp-overlay")) {
-    setShowOtp(false);
-  }
-};
+    if (e.target.classList.contains("otp-overlay")) {
+      setShowOtp(false);
+    }
+  };
 
   // Handle OTP input change and auto focus next input
   const handleOtpChange = (e, index) => {
@@ -49,21 +49,21 @@ function App() {
     }
   };
 
-const startTimer = (setTimer, timer) => {
-  if (timer > 0) {
-    const interval = setInterval(() => {
-      setTimer(prevTimer => {
-        if (prevTimer <= 1) {
-          clearInterval(interval); // Stop the timer when it reaches 0
-          return 0;
-        }
-        return prevTimer - 1;
-      });
-    }, 1000);
+  const startTimer = (setTimer, timer) => {
+    if (timer > 0) {
+      const interval = setInterval(() => {
+        setTimer(prevTimer => {
+          if (prevTimer <= 1) {
+            clearInterval(interval); // Stop the timer when it reaches 0
+            return 0;
+          }
+          return prevTimer - 1;
+        });
+      }, 1000);
 
-    return interval; // Return interval ID for external control if needed
-  }
-};
+      return interval; // Return interval ID for external control if needed
+    }
+  };
   // Optional: handle backspace to move focus back
   const handleOtpKeyDown = (e, index) => {
     if (e.key === "Backspace" && !e.target.value && index > 0) {
@@ -73,11 +73,11 @@ const startTimer = (setTimer, timer) => {
 
 
   const handleLoginReq = async () => {
-    
+
     if (!userName || !pass) {
       toast.error("Enter something bitch")
     } else {
-    setLoading(true)
+      setLoading(true)
       const res = await req.post('/user/login', { userName, pass })
       setLoading(false)
       if (res.data.errorCode !== '000000') {
@@ -95,14 +95,14 @@ const startTimer = (setTimer, timer) => {
     } else {
       setLoading(true)
       const res = await req.post('/user/signup', { userName, userMail, pass });
-     setLoading(false)
+      setLoading(false)
       if (res.data.errorCode !== "000000") {
         toast.error(res.data.errorDescription);
       } else {
         toast.success("you got saved by me");
         handleShowOtp();
         setUserId(res.data.Data.insertId)
-         startTimer(setTimer, 60);
+        startTimer(setTimer, 60);
       }
 
 

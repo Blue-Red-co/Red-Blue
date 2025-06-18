@@ -320,6 +320,7 @@ form.sign-in-form {
     min-height: 800px;
     height: 100vh;
   }
+
   .signin-signup {
     width: 100%;
     top: 95%;
@@ -428,6 +429,7 @@ form.sign-in-form {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -452,6 +454,7 @@ form.sign-in-form {
     opacity: 0;
     transform: translateX(100%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0%);
