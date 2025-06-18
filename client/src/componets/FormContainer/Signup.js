@@ -1,132 +1,231 @@
-import React, { useState } from "react";
-import "./Signup.css";
+import React, { useState, useRef, useEffect } from "react";
+import "./Signup.css"; // Your CSS file
 import req from "../../Axios/Axios"
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify'
 import { useNavigate } from "react-router-dom";
+import { useLoader } from "../../LoaderContext";
 
 
-
-// Import CSS file
-
-const Login = () => {
-  const [isSignUp, setIsSignUp] = useState(false);
-  const [userName, setUserName] = useState('');
-  const [pass, setPass] = useState('');
-  const [userMail, setUserMail] = useState('');
+function App() {
+  const { setLoading } = useLoader()
   const nav = useNavigate();
+  const [isSignUpMode, setIsSignUpMode] = useState(false);
+  const [showOtp, setShowOtp] = useState(false);
+  const [timer, setTimer] = useState(60);
+  const [userName, setUserName] = useState('');
+  const [pass, setPass] = useState('')
+  const [userMail, setUserMail] = useState('');
+  const [userId, setUserId] = useState('')
+  const [otp, setOtp] = useState(["", "", "", ""]);
+  const [newstringOtp, setNewOtp] = useState('')
 
-  const callLoginReq = async (e) => {
-    e.preventDefault()
+
+  // Refs for OTP inputs to manage focus
+  const otpRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+
+  const handleSignInClick = () => setIsSignUpMode(false);
+  const handleSignUpClick = () => setIsSignUpMode(true);
+
+  const handleShowOtp = () => setShowOtp(true);
+  const handleHideOtp = (e) => {
+    if (e.target.classList.contains("otp-overlay")) {
+      setShowOtp(false);
+    }
+  };
+
+  // Handle OTP input change and auto focus next input
+  const handleOtpChange = (e, index) => {
+    const { value } = e.target;
+    if (value.length > 1) return; // Prevent multiple characters
+
+    const newOtp = [...otp]; // Copy current OTP state
+    newOtp[index] = value; // Update the specific index
+    setOtp(newOtp); // Update state
+
+    const otpString = newOtp.join("");
+    setNewOtp(otpString)
+    if (value && index < otpRefs.length - 1) {
+      otpRefs[index + 1].current.focus(); // Move focus to next input
+    }
+  };
+
+  const startTimer = (setTimer, timer) => {
+    if (timer > 0) {
+      const interval = setInterval(() => {
+        setTimer(prevTimer => {
+          if (prevTimer <= 1) {
+            clearInterval(interval); // Stop the timer when it reaches 0
+            return 0;
+          }
+          return prevTimer - 1;
+        });
+      }, 1000);
+
+      return interval; // Return interval ID for external control if needed
+    }
+  };
+  // Optional: handle backspace to move focus back
+  const handleOtpKeyDown = (e, index) => {
+    if (e.key === "Backspace" && !e.target.value && index > 0) {
+      otpRefs[index - 1].current.focus();
+    }
+  };
+
+
+  const handleLoginReq = async () => {
+
     if (!userName || !pass) {
-      toast.error("Enetr Somethging you Bitch")
+      toast.error("Enter something bitch")
     } else {
-      const res = await req.post('/user/login', {
-        userName, pass
-      })
+      setLoading(true)
+      const res = await req.post('/user/login', { userName, pass })
+      setLoading(false)
       if (res.data.errorCode !== '000000') {
         toast.error(res.data.errorDescription)
       } else {
-        toast.success("Login sucess");
-        nav('/home')
+        toast.success("You got inside me")
+
       }
-    };
+    }
   }
 
-  const callSignupReq = async (e) => {
-    e.preventDefault()
-    if (!userName || !pass || !userMail) {
-      toast.error("Enter Somethging you Bitch")
+  const handleSignupreq = async () => {
+    if (!userMail || !userName || !pass) {
+      toast.error("Enter Something bitch")
     } else {
-      const res = await req.post('/user/signup', {
-        userName, userMail, pass
-      })
-      if (res.data.errorCode !== '000000') {
-        toast.error(res.data.errorDescription)
+      setLoading(true)
+      const res = await req.post('/user/signup', { userName, userMail, pass });
+      setLoading(false)
+      if (res.data.errorCode !== "000000") {
+        toast.error(res.data.errorDescription);
       } else {
-        toast.success("Account created Sucess")
+        toast.success("you got saved by me");
+        handleShowOtp();
+        setUserId(res.data.Data.insertId)
+        startTimer(setTimer, 60);
       }
-    };
 
+
+    }
   }
+
+  const handleVerfiyOtp = async () => {
+    const res = await req.post('user/verifyotp', { userId, otp: newstringOtp })
+    if (res.data.errorCode !== "000000") {
+      toast.error(res.data.errorDescription);
+    } else {
+      toast.success(res.data.errorDescription)
+      nav('/home')
+    }
+  }
+
   return (
-    <div className={`container ${isSignUp ? "sign-up-mode" : ""}`}>
-      {/* Forms Container */}
-      <div className="forms-container">
-        <div className="signin-signup">
-          {/* Sign-In Form */}
-          <form className="sign-in-form">
-            <h2 className="title">Sign in</h2>
-            <div className="input-field">
-              <i className="fas fa-user"></i>
-              <input type="text" placeholder="Username" value={userName} onChange={(e) => { setUserName(e.target.value) }} />
-            </div>
-            <div className="input-field">
-              <i className="fas fa-lock"></i>
-              <input type="password" placeholder="Password" value={pass} onChange={(e) => { setPass(e.target.value) }} />
-            </div>
-            <input type="submit" value="Login" className="btn solid" onClick={callLoginReq} />
-            <p className="social-text">Or Sign in with social platforms</p>
-            <div className="social-media">
-              <button className="social-icon"><i className="fab fa-facebook-f"></i></button>
-              <button className="social-icon"><i className="fab fa-twitter"></i></button>
-              <button className="social-icon"><i className="fab fa-google"></i></button>
-              <button className="social-icon"><i className="fab fa-linkedin-in"></i></button>
-            </div>
-          </form>
+    <div className="app-wrapper">
+      {/* Main login/signup UI */}
+      <div className={`main-content ${showOtp ? "blurred" : ""}`}>
+        <div className={`container ${isSignUpMode ? "sign-up-mode" : ""}`}>
+          <div className="forms-container">
+            <div className="signin-signup">
+              {/* Sign In Form */}
+              <form action="#" className="sign-in-form">
+                <h2 className="title">Sign in</h2>
+                <div className="input-field">
+                  <i className="fas fa-user"></i>
+                  <input type="text" placeholder="Username" value={userName} onChange={(e) => { setUserName(e.target.value) }} />
+                </div>
+                <div className="input-field">
+                  <i className="fas fa-lock"></i>
+                  <input type="password" placeholder="Password" value={pass} onChange={(e) => { setPass(e.target.value) }} />
+                </div>
+                <button type="button" className="btn" onClick={handleLoginReq}>
+                  Login
+                </button>
+              </form>
 
-          {/* Sign-Up Form */}
-          <form className="sign-up-form">
-            <h2 className="title">Sign up</h2>
-            <div className="input-field">
-              <i className="fas fa-user"></i>
-              <input type="text" placeholder="Username" value={userName} onChange={(e) => { setUserName(e.target.value) }} />
+              {/* Sign Up Form */}
+              <form action="#" className="sign-up-form">
+                <h2 className="title">Sign up</h2>
+                <div className="input-field">
+                  <i className="fas fa-user"></i>
+                  <input type="text" placeholder="Username" value={userName} onChange={(e) => { setUserName(e.target.value) }} />
+                </div>
+                <div className="input-field">
+                  <i className="fas fa-envelope"></i>
+                  <input type="email" placeholder="Email" value={userMail} onChange={(e) => { setUserMail(e.target.value) }} />
+                </div>
+                <div className="input-field">
+                  <i className="fas fa-lock"></i>
+                  <input type="password" placeholder="Password" value={pass} onChange={(e) => { setPass(e.target.value) }} />
+                </div>
+                <button type="button" className="btn1" onClick={handleSignupreq}>
+                  Sign Up
+                </button>
+              </form>
             </div>
-            <div className="input-field">
-              <i className="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" value={userMail} onChange={(e) => { setUserMail(e.target.value) }} />
+          </div>
+
+          <div className="panels-container">
+            {/* Left Panel */}
+            <div className="panel left-panel">
+              <div className="content">
+                <h3>New here?</h3>
+                <p>Sign up and start your journey with us.</p>
+                <button className="btn transparent" onClick={handleSignUpClick}>
+                  Sign Up
+                </button>
+              </div>
+              <img src="log.svg" className="image" alt="login" />
             </div>
-            <div className="input-field">
-              <i className="fas fa-lock"></i>
-              <input type="password" placeholder="Password" value={pass} onChange={(e) => { setPass(e.target.value) }} />
+
+            {/* Right Panel */}
+            <div className="panel right-panel">
+              <div className="content">
+                <h3>One of us?</h3>
+                <p>If you already have an account, just sign in.</p>
+                <button className="btn transparent" onClick={handleSignInClick}>
+                  Sign In
+                </button>
+              </div>
+              <img src="register.svg" className="image" alt="register" />
             </div>
-            <input type="submit" className="btn1" value="Sign up" onClick={callSignupReq} />
-            <p className="social-text">Or Sign up with social platforms</p>
-            <div className="social-media">
-              <a href="https://sherin.fun" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-              <a href="https://sherin.fun" className="social-icon"><i className="fab fa-twitter"></i></a>
-              <a href="https://sherin.fun" className="social-icon"><i className="fab fa-google"></i></a>
-              <a href="https://sherin.fun" className="social-icon"><i className="fab fa-linkedin-in"></i></a>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
 
-      {/* Panels Container */}
-      <div className="panels-container">
-        {/* Left Panel */}
-        <div className="panel left-panel">
-          <div className="content">
-            <h3>New here?</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <button className="btn transparent" onClick={() => setIsSignUp(true)}>Sign up</button>
-          </div>
-          <img src="./log.svg" className="image" alt="Sign-up illustration" />
-        </div>
+      {/* OTP Popup Overlay */}
+      {showOtp && (
+        <div className="otp-overlay" onClick={handleHideOtp} >
+          <div className="otp-container">
+            <div className="header-form">
+              <h4>Enter OTP</h4>
+              <p>Check your email or phone for the OTP</p>
+            </div>
 
-        {/* Right Panel */}
-        <div className="panel right-panel">
-          <div className="content">
-            <h3>One of us?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button className="btn transparent" onClick={() => setIsSignUp(false)}>Sign in</button>
-          </div>
-          <img src=".\register.svg" className="image" alt="Sign-in illustration" />
-        </div>
-      </div>
+            {/* OTP image */}
+            <img src="otp.svg" alt="OTP verification" className="otp-image" />
 
+            <div className="auth-pin-wrap">
+              {otpRefs.map((ref, index) => (
+                <input
+                  key={index}
+                  type="text"
+                  maxLength="1"
+                  className="code-input"
+                  ref={ref}
+                  onChange={(e) => handleOtpChange(e, index)}
+                  onKeyDown={(e) => handleOtpKeyDown(e, index)}
+                />
+              ))}
+            </div>
+            <p className="countdown">Resend OTP in {timer} seconds</p>
+            <div className="btn-wrap">
+              <button onClick={handleVerfiyOtp}>Confirm</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
-};
+}
 
-export default Login;
+export default App;

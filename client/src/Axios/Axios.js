@@ -1,12 +1,11 @@
 import axios from "axios"
 
-const abc = axios.create({
-  baseURL: 'http://localhost:3010',
-  timeout: 7000,
+const req = axios.create({
+  baseURL: `http://16.170.163.114:3010`,
   headers: {
     'X-Custom-Header': 'foobar',
     "Apikey": "heloo"
   }
 });
-export default abc
+export default req
 
