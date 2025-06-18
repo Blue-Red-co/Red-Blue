@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import "./Signup.css"; // Your CSS file
 import req from "../../Axios/Axios"
 import { toast } from 'react-toastify'
@@ -7,8 +7,8 @@ import { useLoader } from "../../LoaderContext";
 
 
 function App() {
-  const { setLoading } = useLoader()
   const nav = useNavigate();
+  const { setLoading } = useLoader()
   const [isSignUpMode, setIsSignUpMode] = useState(false);
   const [showOtp, setShowOtp] = useState(false);
   const [timer, setTimer] = useState(60);
@@ -17,7 +17,7 @@ function App() {
   const [userMail, setUserMail] = useState('');
   const [userId, setUserId] = useState('')
   const [otp, setOtp] = useState(["", "", "", ""]);
-  const [newstringOtp, setNewOtp] = useState('')
+  const [newstringOtp, setNewOtp] = useState('');
 
 
   // Refs for OTP inputs to manage focus
@@ -33,6 +33,21 @@ function App() {
     }
   };
 
+  const startTimer = (setTimer, timer) => {
+    if (timer > 0) {
+      const interval = setInterval(() => {
+        setTimer(prevTimer => {
+          if (prevTimer <= 1) {
+            clearInterval(interval); // Stop the timer when it reaches 0
+            return 0;
+          }
+          return prevTimer - 1;
+        });
+      }, 1000);
+
+      return interval;
+    }
+  };
   // Handle OTP input change and auto focus next input
   const handleOtpChange = (e, index) => {
     const { value } = e.target;
@@ -49,22 +64,6 @@ function App() {
     }
   };
 
-  const startTimer = (setTimer, timer) => {
-    if (timer > 0) {
-      const interval = setInterval(() => {
-        setTimer(prevTimer => {
-          if (prevTimer <= 1) {
-            clearInterval(interval); // Stop the timer when it reaches 0
-            return 0;
-          }
-          return prevTimer - 1;
-        });
-      }, 1000);
-
-      return interval; // Return interval ID for external control if needed
-    }
-  };
-  // Optional: handle backspace to move focus back
   const handleOtpKeyDown = (e, index) => {
     if (e.key === "Backspace" && !e.target.value && index > 0) {
       otpRefs[index - 1].current.focus();
@@ -83,6 +82,7 @@ function App() {
       if (res.data.errorCode !== '000000') {
         toast.error(res.data.errorDescription)
       } else {
+        nav('/home');
         toast.success("You got inside me")
 
       }
@@ -103,19 +103,57 @@ function App() {
         handleShowOtp();
         setUserId(res.data.Data.insertId)
         startTimer(setTimer, 60);
+
       }
 
 
     }
   }
+  const handleForgotPassword = async () => {
+    setLoading(true);
+    const res = await req.get('/user/getpassword', {
+      params: { userName }
+    })
 
+    setLoading(false);
+    if (res.data.errorCode !== "000000") {
+      toast.error(res.data.errorDescription);
+    } else {
+      toast.success(` { ${res.data.Data.pass} } this is your password  ${res.data.errorDescription}`);
+    }
+
+  }
   const handleVerfiyOtp = async () => {
+    setLoading(true);
     const res = await req.post('user/verifyotp', { userId, otp: newstringOtp })
+    setLoading(false);
     if (res.data.errorCode !== "000000") {
       toast.error(res.data.errorDescription);
     } else {
       toast.success(res.data.errorDescription)
       nav('/home')
+    }
+  }
+
+  const handleResendOtp = async () => {
+    if (timer === 0) {
+      setLoading(true);
+      const res = await req.get('/user/getotp', {
+        params: { userId }
+      });
+      setLoading(false);
+      if (res.data.errorCode !== "000000") {
+        toast.error(res.data.errorDescription);
+      } else {
+        toast.success(res.data.Data + " " + res.data.errorDescription);
+        setNewOtp('');
+        setOtp(["", "", "", ""]);
+        otpRefs.forEach(ref => ref.current.value = "");
+        setTimer(60);
+        startTimer(setTimer, 60);
+      }
+    } else {
+      toast.error("You can only resend OTP after the timer ends");
     }
   }
 
@@ -128,27 +166,27 @@ function App() {
             <div className="signin-signup">
               {/* Sign In Form */}
               <form action="#" className="sign-in-form">
-  <h2 className="title">Sign in</h2>
-  
-  <div className="input-field">
-    <i className="fas fa-user"></i>
-    <input type="text" placeholder="Username" value={userName} onChange={(e) => { setUserName(e.target.value) }} />
-  </div>
-  
-  <div className="input-field">
-    <i className="fas fa-lock"></i>
-    <input type="password" placeholder="Password" value={pass} onChange={(e) => { setPass(e.target.value) }} />
-  </div>
-  
-  <button type="button" className="btn" onClick={handleLoginReq}>
-    Login
-  </button>
+                <h2 className="title">Sign in</h2>
 
-  {/* Forgot Password Link */}
-  <button type="button" className="btn forgot-password-btn" onClick={handleForgotPassword}>
-    Forgot Password?
-  </button>
-</form>
+                <div className="input-field">
+                  <i className="fas fa-user"></i>
+                  <input type="text" placeholder="Username" value={userName} onChange={(e) => { setUserName(e.target.value) }} />
+                </div>
+
+                <div className="input-field">
+                  <i className="fas fa-lock"></i>
+                  <input type="password" placeholder="Password" value={pass} onChange={(e) => { setPass(e.target.value) }} />
+                </div>
+
+                <button type="button" className="btn" onClick={handleLoginReq}>
+                  Login
+                </button>
+
+                {/* Forgot Password Link */}
+                <button type="button" className="btn forgot-password-btn" onClick={handleForgotPassword}>
+                  Forgot Password?
+                </button>
+              </form>
 
               {/* Sign Up Form */}
               <form action="#" className="sign-up-form">
@@ -225,7 +263,10 @@ function App() {
                 />
               ))}
             </div>
-            <p className="countdown">Resend OTP in {timer} seconds</p>
+            <p className="countdown">Resend OTP in {timer} seconds <a onClick={handleResendOtp}>
+              Click here
+            </a>
+            </p>
             <div className="btn-wrap">
               <button onClick={handleVerfiyOtp}>Confirm</button>
             </div>

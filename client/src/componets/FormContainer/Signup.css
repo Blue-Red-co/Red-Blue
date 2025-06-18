@@ -554,6 +554,13 @@ form.sign-in-form {
   cursor: pointer;
   margin-top: 10px;
 }
+
 .forgot-password-btn:hover {
   text-decoration: underline;
+  background-color: transparent;
+}
+
+.countdown :hover {
+  text-decoration: underline;
+  background-color: transparent;
 }

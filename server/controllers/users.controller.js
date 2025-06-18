@@ -7,7 +7,7 @@ const login_Controller = async (req, res, next) => {
                     FROM users 
                     WHERE userName = ? 
                     AND pass = ?
-                    AND isDeleted = 0
+                    AND isDelete = 0
                     AND isActive = 1`;
     const result = await MySQLDB_Helper.executeQuery(sql, [userName, pass]);
     if (result.length === 0) {
@@ -101,21 +101,21 @@ const verifyOtp_controller = async (req, res, next) => {
 }
 
 const forgetPassword_controller = async (req, res, next) => {
-    const { userMail } = req.body
+    const { userName } = req.query;
     const sql = `       SELECT pass 
                         FROM users 
-                        WHERE userMail = ?`;
-    const result = await MySQLDB_Helper.executeQuery(sql, [userMail]);
-    if (!result) {
+                        WHERE userName = ?`;
+    const result = await MySQLDB_Helper.executeQuery(sql, [userName]);
+    if (result.length === 0) {
         throw new ApplicationError({ message: "You are not there in my heart Sorry" })
 
     } else {
-        res.json(ApplicationSuccess.getSuccessObject(result[0], "You Bitch Don't ever ask for the Password"))
+        res.json(ApplicationSuccess.getSuccessObject(result[0], " Bitch Don't ever ask for the Password"))
     }
 }
 
 const reSendOtp_controller = async (req, res, next) => {
-    const { userId } = req.body;
+    const { userId } = req.query;
     const otp = generateOTP()
     const sql = `   UPDATE users
                     SET otp = ?
