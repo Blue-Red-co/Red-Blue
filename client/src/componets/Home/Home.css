@@ -241,9 +241,9 @@
 
     .thumb li::before {
         position: absolute;
-        top: -150px;
-        left: 0;
-        font-size: 6em;
+        top: -115px;
+        left: 0px;
+        font-size: 5em;
     }
 
     .header .navigation {
@@ -290,3 +290,4 @@
         background-repeat: no-repeat;
     }
 }
+
