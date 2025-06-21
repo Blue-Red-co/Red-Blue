@@ -14,6 +14,7 @@ const fruitImages = [
 function Home() {
   const [activeClass, setActiveClass] = useState(0);
   const [activeIndex, setActiveIndex] = useState(fruitImages[0]);
+  const [activeToggel, setActiveToggle] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -33,7 +34,8 @@ function Home() {
         <div className='bg' style={{ background: activeIndex.background }}></div>
         <div className="header">
           <Link to='#' className='logo'> logo </Link>
-          <ul className='navigation'>
+          <div  className={`toggle ${activeToggel? 'active' : ''}`} onClick={() => setActiveToggle(prev => !prev)}> </div>
+          <ul  className= {` navigation ${activeToggel ? 'active' : ''}`}> 
             <li className='nav-item'><Link to='#' className='active'>Home</Link></li>
             <li className='nav-item'><Link to='#'>Profile</Link></li>
             <li className='nav-item'><Link to='#'>Cart</Link></li>

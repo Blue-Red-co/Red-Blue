@@ -115,7 +115,7 @@
 .content .textbox .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 8px 20px;
+    padding: 15px 25px;
     background: #fff;
     color: #333;
     border-radius: 40px;
@@ -159,7 +159,8 @@
     padding: 5px;
     border: 2px solid rgba(255, 255, 255, 0.25);
 }
-.thumb li.active{
+
+.thumb li.active {
     border: 2px solid rgba(255, 255, 255, 1);
 
 }
@@ -181,6 +182,111 @@
 .thumb li.active::before {
     opacity: 1;
 }
+
 .thumb li img {
     max-width: 50px;
+}
+
+@media (max-width: 991px) {
+    .bg::before {
+        display: none;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .section {
+        padding: 20px;
+        padding-bottom: 120px;
+    }
+
+    .content {
+        flex-direction: column;
+        /* align-items: center; */
+        margin-top: 100px;
+    }
+.content .textbox {
+    max-width: 100%;
+}
+    .content .textbox h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    /* .content .textbox p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-bottom: 20px;
+    } */
+
+    .content .imgbox {
+        max-width: 100%;
+        /* display: flex; */
+        justify-content: center;
+    }
+
+    .content .imgbox  img {
+        max-width: 300px
+    }
+
+    .thumb li {
+        margin: 0 3px;
+        height: 55px;
+    }
+
+    .thumb li img {
+        max-width: 40px;
+    }
+
+    .thumb li::before {
+        position: absolute;
+        top: -150px;
+        left: 0;
+        font-size: 6em;
+    }
+
+    .header .navigation {
+        display: none;
+    }
+    .header .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        flex-direction: column;
+    }
+    .header .navigation li {
+        font-size: 1.2em;
+        margin: 10px 0;
+        
+    }
+
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url('C:\Users\vsher\Desktop\Red-Blue\client\public\menu.png');
+        background-size: 30px;
+        backgground-position: center;
+        background-repeat: no-repeat;
+        z-index: 1000;
+
+    }
+    .toggle.active {
+        position: fixed;
+        right: 20px;
+        background: url('C:\Users\vsher\Desktop\Red-Blue\client\public\menu.png');
+        background-size: 30px;
+        backgground-position: center;
+        background-repeat: no-repeat;
+    }
 }
