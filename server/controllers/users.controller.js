@@ -6,15 +6,13 @@ const login_Controller = async (req, res, next) => {
     const sql = `   SELECT userId, userMail, userName, pass, isActive, isDelete 
                     FROM users 
                     WHERE userName = ? 
-                    AND pass = ?
-                    AND isDelete = 0
-                    AND isActive = 1`;
+                    AND pass = ?`;
     const result = await MySQLDB_Helper.executeQuery(sql, [userName, pass]);
     if (result.length === 0) {
         throw new ApplicationError({ message: "login detail incorrect", location: __locationObject, errorObject: new Error("login details is wrong") })
-    } else if (result[0].isActive === true) {
+    } else if (result[0].isActive === 1) {
         res.json(ApplicationSuccess.getSuccessObject(result, "sucess "));
-    } else if (result[0].isDelete === true) {
+    } else if (result[0].isDelete === 1) {
         throw new ApplicationError({ message: "Please Contact your Admin Account is Deactivated" })
     } else {
         throw new ApplicationError({ message: " Are you sure you actually fits here please check your stuff is there in your mail  " })

@@ -1,15 +1,12 @@
-// App.js
-import React from "react";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./componets/home";
-import Login from "./componets/FormContainer/Signup";
-import ErrorBoundary from "./componets/ErrorBoundary ";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import HashLoader from "react-spinners/HashLoader";
+import { ToastContainer } from "react-toastify";
+import ErrorBoundary from "./componets/ErrorBoundary ";
+import Home from "./componets/Home/Home";
+import Login from "./componets/Login/Signup";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
-
-
 import { LoaderProvider, useLoader } from "./LoaderContext";
 
 const GlobalLoader = () => {
