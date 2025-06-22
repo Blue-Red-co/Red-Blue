@@ -1,6 +1,3 @@
-Of course, Sherin! Here's your complete, polished `README.md`—logo-rich, visually structured, and personalized to highlight your project's best features:
-
----
 
 # ✨ Project Preview
 
@@ -85,13 +82,13 @@ This project is maintained by:
   <tr>
     <td align="center">
       <a href="https://github.com/sherin-v">
-        <img src="https://avatars.githubusercontent.com/u/122630859?v=4" width="80" alt="@sherin-v" /><br />
+        <img src="https://github.com/sherin-v.png" width="80" alt="@sherin-v" /><br />
         <sub><b>@sherin-v</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/Jegathsuriya">
-        <img src="https://avatars.githubusercontent.com/u/171624926?v=4" width="80" alt="@Jegathsuriya" /><br />
+        <img src="https://github.com/Jegathsuriya.png" width="80" alt="@Jegathsuriya" /><br />
         <sub><b>@Jegathsuriya</b></sub>
       </a>
     </td>
@@ -100,6 +97,4 @@ This project is maintained by:
 
 Proudly developed under the **Blue-Red-co Ow** organization.
 
----
 
-Now you’ve got a README that truly reflects the spirit of your work—clear, branded, and community-ready. Want to add a license section or a roadmap while you're at it?
