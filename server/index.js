@@ -4,7 +4,7 @@ const {
   ApplicationError,
   VW_Environment,
   Implementation_Manager,
-  Email_Helper  
+  Email_Helper 
 } = require('node_helper');
 initializeGlobalErrorHandler();
 
