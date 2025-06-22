@@ -1,3 +1,6 @@
+Of course, Sherin! Here's your complete, polished `README.md`—logo-rich, visually structured, and personalized to highlight your project's best features:
+
+---
 
 # ✨ Project Preview
 
@@ -74,6 +77,29 @@ Here's a sample of the local configuration structure used by the project. Note: 
 
 > 🔐 _This configuration example is for reference only. The real config file contains private details and is not published._
 
-## 📌 Note
+## 👥 Contributors & Ownership
 
-Thanks for stopping by! I’m actively working to make this project and its underlying tech more accessible. Stay tuned for updates and future releases.
+This project is maintained by:
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/sherin-v">
+        <img src="https://avatars.githubusercontent.com/u/122630859?v=4" width="80" alt="@sherin-v" /><br />
+        <sub><b>@sherin-v</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Jegathsuriya">
+        <img src="https://avatars.githubusercontent.com/u/171624926?v=4" width="80" alt="@Jegathsuriya" /><br />
+        <sub><b>@Jegathsuriya</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+Proudly developed under the **Blue-Red-co Ow** organization.
+
+---
+
+Now you’ve got a README that truly reflects the spirit of your work—clear, branded, and community-ready. Want to add a license section or a roadmap while you're at it?
