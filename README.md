@@ -27,7 +27,7 @@ This project is currently in **active development** and powered by a **custom No
 ## 🌐 Live Demo
 
 While local setup isn’t available, you can **experience the live output right here**:  
-👉 [http://login.sherin.fun](http://login.sherin.fun)
+👉 [http://login.sherin.fun](http://login.sherin.fun:3010)
 
 🔄 _As the project grows, I will ensure that the latest build is always deployed and accessible at the above URL._
 
