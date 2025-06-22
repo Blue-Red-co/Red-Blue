@@ -8,6 +8,7 @@ import Login from "./componets/Login/Signup";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import { LoaderProvider, useLoader } from "./LoaderContext";
+import IteamCard from "./componets/IteamCard/IteamCard";
 
 const GlobalLoader = () => {
   const { loading } = useLoader();
@@ -21,6 +22,7 @@ const GlobalLoader = () => {
 const router = createBrowserRouter([
   { path: "/", element: <Login /> },
   { path: "/home", element: <Home /> },
+  { path: "/i", element: <IteamCard /> },
 ]);
 
 
