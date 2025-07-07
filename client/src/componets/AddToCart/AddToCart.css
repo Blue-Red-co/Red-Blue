@@ -1,0 +1,192 @@
+.add-to-cart-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f9;
+  font-family: 'Inter', sans-serif;
+}
+
+.white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Base button setup */
+.add-to-cart {
+  --background-default: #fff;
+  --background-hover: #fff;
+  --background-scale: 1;
+  --text-color: #17171b;
+  --text-o: 1;
+  --text-x: 12px;
+  --cart: #17171b;
+  --cart-x: -48px;
+  --cart-y: 0px;
+  --cart-rotate: 0deg;
+  --cart-scale: 0.75;
+  --cart-clip: 0px;
+  --cart-clip-x: 0px;
+  --cart-tick-offset: 10px;
+  --cart-tick-color: #ff328b;
+  --shirt-y: -16px;
+  --shirt-scale: 0;
+  --shirt-color: #fff;
+  --shirt-logo: #17171b;
+  --shirt-second-y: 24px;
+  --shirt-second-color: #17171b;
+  --shirt-second-logo: #fff;
+
+  position: relative;
+  height: 40%;
+  width: 108px;
+  padding: 5px 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: inherit;
+  margin-top: 20px;
+}
+
+.add-to-cart::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 5px;
+  background: var(--background, var(--background-default));
+  transform: scaleX(var(--background-scale)) translateZ(0);
+  transition: background 0.25s;
+  z-index: 0;
+}
+
+.add-to-cart:not(.active):hover {
+  --background: var(--background-hover);
+}
+
+.add-to-cart span {
+  position: relative;
+  margin-left: 15px;
+  z-index: 1;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text-color);
+  opacity: var(--text-o);
+  transform: translateX(var(--text-x)) translateZ(0);
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+/* Morph SVG */
+.morph {
+  --svg-width: 31px;
+  --svg-height: 13px;
+  --svg-left: 65%;
+  --svg-top: -8px;
+  --svg-position: absolute;
+  --svg-fill: var(--background, var(--background-default));
+  margin-left: -32px;
+  pointer-events: none;
+  transition: fill 0.25s;
+}
+
+.add-to-cart svg {
+  display: block;
+  position: var(--svg-position, relative);
+  width: var(--svg-width, 24px);
+  height: var(--svg-height, 24px);
+  left: var(--svg-left, 0);
+  top: var(--svg-top, 0);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.add-to-cart svg path {
+  fill: var(--svg-fill, none);
+  stroke: var(--svg-stroke, none);
+  stroke-width: var(--svg-stroke-width, 2);
+}
+
+/* Shirt styles */
+.shirt,
+.cart {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+}
+
+.shirt {
+  margin: -12px 0 0 -12px;
+  top: 0;
+  left: 65px;
+  transform-origin: 50% 100%;
+  transform: translateY(var(--shirt-y)) scale(var(--shirt-scale));
+}
+
+.shirt svg {
+  --svg-fill: var(--shirt-color);
+}
+
+.shirt svg g {
+  --svg-fill: var(--svg-g-fill, var(--shirt-logo));
+}
+
+.shirt svg.second {
+  --svg-fill: var(--shirt-second-color);
+  --svg-g-fill: var(--shirt-second-logo);
+  --svg-position: absolute;
+  margin-top: -10px;
+  margin-left: -2px;
+  clip-path: polygon(
+    0 var(--shirt-second-y),
+    24px var(--shirt-second-y),
+    24px 24px,
+    0 24px
+  );
+}
+
+/* Cart styles */
+.cart {
+  --svg-width: 35px;
+  --svg-height: -5px;
+  --svg-stroke: var(--cart);
+  top: 3px;
+  margin-left: -8px;
+  transform: translate(var(--cart-x), var(--cart-y))
+    rotate(var(--cart-rotate))
+    scale(var(--cart-scale))
+    translateZ(0);
+}
+
+.cart::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 12px;
+  left: 7px;
+  top: 7px;
+  background: var(--cart);
+  clip-path: polygon(
+    0 0,
+    22px 0,
+    calc(22px - var(--cart-clip-x)) var(--cart-clip),
+    var(--cart-clip-x) var(--cart-clip)
+  );
+}
+
+.cart path.wheel {
+  --svg-stroke-width: 1.5;
+}
+
+.cart path.tick {
+  --svg-stroke: var(--cart-tick-color);
+  stroke: var(--svg-stroke, #ff328b);
+  stroke-dasharray: 10px;
+  stroke-dashoffset: var(--cart-tick-offset);
+  transition: stroke-dashoffset 0.3s;
+}

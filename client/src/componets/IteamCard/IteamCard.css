@@ -1,90 +1,102 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.cardboady{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+
+.cardboady {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+
+
 }
 
-.card{
+.card {
   position: relative;
-  width: 600px;
-  height: 350px;
+  width: 300px;
+  height: 255px;
   border-radius: 20px;
-  display: flex; 
-  align-items: center ;
+  display: flex;
+  align-items: center;
   transition: 0.5s;
 }
-.card .circle{
+
+.card .circle {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-   border-radius: 20px;
-  overflow: hidden; 
-} 
-.card .circle::before{
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: aquamarine;
-clip-path: circle(120px at center);
-transition: 0.5s;
+  border-radius: 20px;
+  overflow: hidden;
 }
-.card:hover .circle::before{
+
+.card .circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: aquamarine;
+  clip-path: circle(90px at center);
+  transition: 0.5s;
+}
+
+.card.active .circle::before {
   background: #0065c3;
   clip-path: circle(400px at center);
 }
-.card img{
+
+.card img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 300px;
+  height: 100px;
   pointer-events: none;
   transition: 0.5s;
 }
 
-.card:hover img{
-left: 72%;
-height: 500px;
+.card.active img {
+  left: 82%;
+  height: 200px;
 }
 
-.card .contents{
+.card .contents {
   position: relative;
-  width: 50%;
+  width: 70%;
   left: 20%;
   padding: 20px 20px 20px 40px;
   transition: 0.5s;
   opacity: 0;
   visibility: hidden;
-} 
+}
 
-.card:hover .contents{
+.card.active .contents {
   left: 0;
   opacity: 1;
   visibility: visible;
 }
-.card .contents h2{
+
+.card .contents h2 {
   color: #fff;
   text-transform: uppercase;
-line-height: 1em;
-  font-size: 2em;
-  margin-bottom: 5px;
+  line-height: 1em;
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
-.card .contents p{
+
+.card .contents p {
   color: #fff;
-  
+  font-size: 10px;
 }
-.card .contents .btn{
+
+.card .contents .btn {
   position: relative;
   margin-top: 10px;
   padding: 10px 20px;
@@ -97,29 +109,35 @@ line-height: 1em;
 }
 
 @media (max-width: 991px) {
-  .card{
+  
+
+  .card {
     width: auto;
     max-width: 350px;
     align-items: flex-start;
     margin: 10px;
   }
-  .card:hover { 
+
+  .card.active {
     height: 600px;
 
   }
-  .card .contents{
+
+  .card .contents {
     width: 100%;
     left: 0;
     padding: 30px;
   }
-  .card:hover img {
+
+  .card.active img {
     top: 70%;
     left: 50%;
     height: 300px;
   }
 }
-@media (max-width: 911px){
-  .card .contents{
+
+@media (max-width: 911px) {
+  .card .contents {
     padding: 20px;
   }
 }

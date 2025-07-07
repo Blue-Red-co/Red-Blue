@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Category.css';
+import IteamCard from '../IteamCard/IteamCard';
 const testData = [
   {
     name: "Someone",
@@ -35,8 +36,8 @@ function Category() {
             key={index}
             className="box"
             data-color={item.data}
-            onMouseEnter={() => setHoveredColor(item.bgColor)}
-            onMouseLeave={() => setHoveredColor(null)}
+            onClick={() => setHoveredColor(item.bgColor)}
+            // onMouseLeave={() => setHoveredColor(null)}
           >
             <div className="imgBx">
               <img alt="img" src={item.img} />
@@ -46,6 +47,8 @@ function Category() {
             </div>
           </div>
         ))}
+        <br />
+        <IteamCard />
       </div>
     </div>
   );

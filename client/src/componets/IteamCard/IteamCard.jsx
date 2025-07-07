@@ -1,21 +1,76 @@
-import React from 'react'
+import { useState } from 'react' 
 import './IteamCard.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import AddToCart from '../AddToCart/AddToCart'
 function IteamCard() {
+  const [activeToggel, setActiveToggle] = useState(false)
+  const obj = [
+    {
+    "heading":"test",
+    "para": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.`,
+    "img": "../pepse.png",
+    "circle":"red",
+    "card": "red"        
+  },
+   {
+    "heading":"test",
+    "para": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.`,
+    "img": "../pepse.png",
+    "circle":"red",
+    "card": "red"        
+  },
+   {
+    "heading":"test",
+    "para": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.`,
+    "img": "../pepse.png",
+    "circle":"red",
+    "card": "red"        
+  },
+  {
+    "heading":"test",
+    "para": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.`,
+    "img": "../pepse.png",
+    "circle":"red",
+    "card": "red"        
+  },
+  {
+    "heading":"test",
+    "para": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.`,
+    "img": "../pepse.png",
+    "circle":"red",
+    "card": "red"        
+  },{
+    "heading":"test",
+    "para": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.`,
+    "img": "../pepse.png",
+    "circle":"red",
+    "card": "red"        
+  }
+]
+  
+  
   return (
     <div className='cardboady'>
-      <div className='card'>
-        <div className='circle'> </div>
+     {obj.map((item , i ) => (
+
+       <div key={i} className = {`card ${activeToggel === i? 'active' : ''}`} onClick={() => setActiveToggle(prev => (prev === i ? null : i))} >
+         <div className= "circle"  > </div>
         <div className='contents'>
-          <h2>Card Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-          </p>
-          <Link className='btn' to="#">Buy Now</Link>
+          <h2>{item.heading}</h2>
+          <p>{item.para}</p>
+          <AddToCart />
         </div>
-        <img src="../pepse.png" alt="icon" />
+        <img src= {item.img} alt="icon" />
 
       </div>
+      
+     ) )}
     </div>
   )
 }

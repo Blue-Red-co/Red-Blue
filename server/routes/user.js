@@ -1,7 +1,7 @@
 const { use } = require('node_helper')
 const express = require('express');
 const router = express.Router()
-const usersControllers = require('../controllers/users.controller');
+const usersControllers = require('../controllers/users.controllers');
 
 router.post('/login',use(usersControllers.login_Controller));
 router.post('/signup', use(usersControllers.createUser_controller));

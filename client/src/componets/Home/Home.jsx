@@ -68,6 +68,7 @@ function Home() {
         </ul>
       </div>
       <Category />
+      
     </div>
   );
 }

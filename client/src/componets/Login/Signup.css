@@ -1,4 +1,3 @@
-
 .app-wrapper {
   position: relative;
   min-height: 100vh;
@@ -17,7 +16,7 @@
 .main-content.blurred {
   filter: blur(6px);
   pointer-events: none;
-  /* user-select: none; */
+  user-select: none;
 }
 
 .container {
@@ -303,7 +302,8 @@ form.sign-in-form {
     min-height: 800px;
     height: 100vh;
   }
-   .container:before {
+
+  .container:before {
     background-image: linear-gradient(-200deg, #f43648 40%, #4d84e2 40%);
   }
 
@@ -397,12 +397,12 @@ form.sign-in-form {
   }
 
   .container.sign-up-mode .left-panel {
-  pointer-events: none;
-}
+    pointer-events: none;
+  }
 
-.container.sign-up-mode .right-panel {
-  pointer-events: all;
-}
+  .container.sign-up-mode .right-panel {
+    pointer-events: all;
+  }
 }
 
 /* ===================== */
@@ -410,15 +410,16 @@ form.sign-in-form {
 /* ===================== */
 
 .otp-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 48, 87, 0.28);
-  filter: blur(10px);
-  display: flex;
-  justify-content: center;
   align-items: center;
+  animation: fadeInBg .5s ease forwards;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #00305747;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: fixed;
   z-index: 9999;
-  animation: fadeInBg 0.5s ease forwards;
 }
 
 @keyframes fadeInBg {
@@ -530,7 +531,7 @@ form.sign-in-form {
   width: 100%;
   padding: 15px 30px;
   border-radius: 8px;
-  background-color: aquamarine;
+  background-color: #04befe;
   color: #fff;
   border: none;
   font-size: 18px;
@@ -560,9 +561,9 @@ form.sign-in-form {
   text-decoration: underline;
   background-color: transparent;
 }
-.otpbtn
-{
-    background: none;
+
+.otpbtn {
+  background: none;
   border: none;
   cursor: pointer;
   margin-top: 10px;

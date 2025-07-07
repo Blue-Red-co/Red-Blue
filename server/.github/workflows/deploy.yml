@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    steps:
+    steps: 
     - name: Deploy via SSH
       uses: appleboy/ssh-action@master
       with:
@@ -28,7 +28,7 @@ jobs:
           pnpm install
 
           echo "🔁 Flushing PM2 logs and restarting the app..."
-          pm2 flush
-          pm2 restart project
+           pm2 flush myProject
+          pm2 restart myProject
 
           echo "✅ Deployment complete!"
