@@ -28,7 +28,7 @@ jobs:
           pnpm install
 
           echo "🔁 Flushing PM2 logs and restarting the app..."
-           pm2 flush myProject
-          pm2 restart myProject
+          sudo pm2 flush MyProject
+          pm2 restart MyProject
 
-          echo "✅ Deployment complete!"
+          echo "✅ Deployment complete!" 

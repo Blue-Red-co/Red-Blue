@@ -1,11 +1,11 @@
-const { MySQLDB_Helper, ApplicationSuccess, ApplicationError } = require("node_helper");
+const { ApplicationError, ApplicationSuccess, MySQLDB_Helper, logMessage, Email_Helper } = require('node_helper');
 const { generateOTP, generateOtpValues } = require('../helper/everywherefunction')
 
 const login_Controller = async (req, res, next) => {
     try {
         const { userName, pass } = req.body;
         if (!userName || !pass) {
-            throw new ApplicationError({message: "I did't get whole data to verfy the login", location: __locationObject })
+            throw new ApplicationError({message:"I did't get whole data to verfy the login", location: __locationObject })
         }else{
         const sql = `   SELECT userId, userMail, userName, pass, isActive, isDelete 
                         FROM users 
@@ -13,7 +13,7 @@ const login_Controller = async (req, res, next) => {
                         AND pass = ?`;
         const result = await MySQLDB_Helper.executeQuery(sql, [userName, pass]);
         if (result.length === 0) {
-            throw new ApplicationError({message: "login details is incorrect", location: __locationObject })
+            throw new ApplicationError({ location: __locationObject, errorObject: new Error("login details is incorrect") })
         } else if (result[0].isActive === 1) {
             res.json(ApplicationSuccess.getSuccessObject(result, "sucess "));
         } else if (result[0].isDelete === 1) {
@@ -24,7 +24,7 @@ const login_Controller = async (req, res, next) => {
         }}
     }
     catch (err) {
-        throw new ApplicationError({ location: __locationObject, errorObject: err })
+        throw new ApplicationError({ location: __locationObject, errorObject: new Error(err) })
     }
 };
 
@@ -106,7 +106,7 @@ const createUser_controller = async (req, res, next) => {
         }}
     } catch (err) {
 
-        throw new ApplicationError({ location: __locationObject, errorObject: err })
+        throw new ApplicationError({ location: __locationObject, errorObject: new Error(err) })
     }
 
 }
@@ -130,7 +130,7 @@ const verifyOtp_controller = async (req, res, next) => {
             throw new ApplicationError({message: "OTP is wrong check your mail again", location: __locationObject })
         }}
     } catch (err) {
-        throw new ApplicationError({ location: __locationObject, errorObject: err })
+        throw new ApplicationError({ location: __locationObject, errorObject: new Error(err) })
     }
 }
 
@@ -154,7 +154,7 @@ const forgetPassword_controller = async (req, res, next) => {
         }}
     
     } catch (err) {
-        throw new ApplicationError({ location: __locationObject, errorObject: err })
+        throw new ApplicationError({ location: __locationObject, errorObject: new Error(err) })
     }
 }
 
@@ -180,7 +180,7 @@ const reSendOtp_controller = async (req, res, next) => {
             res.json(ApplicationSuccess.getSuccessObject(otp, "This is your stuff please you this atlest this time or else someone else will play with it"))
         }
     } catch (err) {
-        throw new ApplicationError({ location: __locationObject, errorObject: err })
+        throw new ApplicationError({ location: __locationObject, errorObject: new Error(err) })
     }
 }
 module.exports = {
