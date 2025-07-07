@@ -75,6 +75,7 @@ node_helpers/
 env/
 ../env/
 *.conf
+./index.conf
 
 # Framework-specific
 .next/
